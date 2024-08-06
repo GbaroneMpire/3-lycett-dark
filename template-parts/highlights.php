@@ -58,7 +58,6 @@
                             <summary class="lct-highlight-slide__summary">Read More</summary>
                             <?= $description ?>
                           </details>
-                          <div class="lct-highlight-slide__preview"><?= $description ?></div>
                         </div>
                       <?php endif; ?>
   
