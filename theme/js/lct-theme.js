@@ -8,11 +8,9 @@ const LCT_Theme = (function(){
     body.classList.add('lct-loaded');
 
     const vid = document.querySelector(".wp-video-shortcode");
-    // vid.oncanplay = function() {
-    //   body.classList.add('lct-home-intro-done')
-    // };
-
-    console.log(vid)
+    vid.oncanplay = function() {
+      body.classList.add('lct-home-intro-done')
+    };
 
   }
 
