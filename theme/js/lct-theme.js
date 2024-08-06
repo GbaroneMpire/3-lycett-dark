@@ -1,6 +1,6 @@
 'use strict';
 
-const LCT_Theme = function(){
+const LCT_Theme = (function(){
 
   const body = document.querySelector('body');
 
@@ -16,6 +16,6 @@ const LCT_Theme = function(){
     init: init
   }
 
-};
+});
 
 LCT_Theme.init();
