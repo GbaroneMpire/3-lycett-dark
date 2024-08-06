@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/theme/css/gallery.css">  
   <script defer src="<?= get_template_directory_uri() ?>/theme/js/gallery.js"></script>
 
-  <section class="container lct-smaller" style="background-color: #000000">
+  <section class="container lct-smaller">
 
     <div class="row">
       <div class="col lct-filter-block">

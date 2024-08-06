@@ -15,7 +15,7 @@
   right: 0;
   bottom: -.35em;
   height: .15em;
-  background: white;
+  background: #1472ba;
   transform: scaleX(0);
   transform-origin: right;
   transition: transform .6s cubic-bezier(1, 0, 0, 1);
