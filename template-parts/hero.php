@@ -34,12 +34,12 @@
                   if (is_string($video_bg)):
         
                     $vid_string_length = strlen($video_bg);
-                    $str_to_insert = ' muted';
+                    $str_to_insert = ' muted ';
                     $newstr = substr_replace($video_bg, $str_to_insert, $vid_string_length - 2, 0);
 
                     echo $newstr;
-                    
-                    echo do_shortcode($video_bg);
+
+                    echo do_shortcode($newstr);
                   else:
                     echo $video_bg;
                   endif;
