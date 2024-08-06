@@ -26,7 +26,7 @@
       
       
         <?php if($filters): ?>
-          <section class="lct-filters d-flex justify-content-center align-items-center lct-gap-3 py-5">
+          <section class="lct-filters d-flex flex-wrap justify-content-center align-items-center lct-gap-3 py-5">
       
             <button class=" lct-filter-button text-white text-uppercase lct-active" data-filter="*">All</button>
             <?php foreach($filters as $filter): ?>
