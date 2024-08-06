@@ -7,7 +7,11 @@ const LCT_Theme = (function(){
   function afterLoad(){
     body.classList.add('lct-loaded');
 
-    setTimeout( () => body.classList.add('lct-home-intro-done'), 1000);
+    let vid = document.getElementById("video-18-1_html5");
+    vid.oncanplay = function() {
+      body.classList.add('lct-home-intro-done')
+    };
+
   }
 
   function init(){
