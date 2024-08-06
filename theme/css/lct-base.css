@@ -109,6 +109,11 @@ a.navbar-brand svg {
   display: block;
 }
 
+body.home a.navbar-brand svg path,
+body.home a.navbar-brand svg line {
+  fill: var(--lct-color-dark-text);
+}
+
 #navbar {
   min-height: var(--lct-header-height);
 }
