@@ -28,7 +28,7 @@
 }
 
 .lct-filter-block {
-  padding: 4em 2% 4em;
+  padding: 3em 2% 4em;
 }
 
 .lct-gallery-image, .grid-sizer {
@@ -36,8 +36,8 @@
 }
 
 .lct-gallery-image {
-  padding-right: .5em;
-  padding-bottom: .5em;
+  padding-right: 1.5em;
+  padding-bottom: 1.5em;
 }
 
 .lct-gallery__description {
@@ -45,7 +45,7 @@
 }
 
 .lct-gallery {
-  min-height: 650px;
+  min-height: 600px;
   transform: translateY(-4em);
 }
 

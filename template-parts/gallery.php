@@ -11,12 +11,12 @@
   $gallery_images = $fields['gallery'];
 ?>
 
-<div class="lct-gallery-grid lct-grid py-5 lct-gap-3">
+<div class="lct-gallery-grid lct-grid lct-gap-3">
 
   <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/theme/css/gallery.css">  
   <script defer src="<?= get_template_directory_uri() ?>/theme/js/gallery.js"></script>
 
-  <section class="container lct-smaller p-0 p-lg-5" style="background-color: #000000">
+  <section class="container lct-smaller" style="background-color: #000000">
 
     <div class="row">
       <div class="col lct-filter-block">
