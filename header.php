@@ -16,8 +16,12 @@
       --lct-button-background: #FFFFFF;
       --lct-button-text: #000000;
       --lct-color-heading: #FFFFFF;
+      --lct-color-body: #000000;
 
       --lct-color-bg-accent: #e0d2c9;
+
+      --lct-color-dark-text: #FFFFFF;
+      --lct-color-light-text: #000000;
     }
   </style>
 </head>

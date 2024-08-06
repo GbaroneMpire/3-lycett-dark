@@ -18,7 +18,7 @@ function b4st_navbar_brand() {
   if ( ! has_action('navbar_brand') ) {
     ?>
     <a class="navbar-brand" href="<?php echo esc_url( home_url('/') ); ?>">
-      <?= wp_get_attachment_image(263, null, false); ?>
+      <?= get_template_part('/template-parts/logo', 'horizontal'); ?>
     </a>
     <?php
   } else {

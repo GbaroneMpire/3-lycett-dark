@@ -56,13 +56,14 @@
 html {
   font-size: calc(var(--lct-html-scale) * .8);
   scroll-behavior: smooth;
-  background-color: var(--lct-background-color);
 }
 
 body {
   font-size:var(--lct-font-size-body);
   font-family: var(--lct-font-family);
   font-weight: 400;
+  background: var(--lct-background-color);
+  color: var(--lct-color-body);
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6, span, a, .lct-main-heading {
@@ -108,8 +109,20 @@ a.navbar-brand {
 }
 
 #navbar a {
-  color: black;
+  color: var(--lct-color-body);
   padding: 1em;
+}
+
+body.home #navbar {
+  position: absolute;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+body.home #navbar a {
+  color: var(--lct-color-dark-text);
 }
 
 /* FOOTER */
