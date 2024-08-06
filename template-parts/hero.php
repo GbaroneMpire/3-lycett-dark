@@ -19,7 +19,7 @@
 
 <section class="lct-hero">
 
-<?php if(is_front_page()): ?>
+  <?php if(is_front_page()): ?>
     <div id="intro-cover"></div>
   <?php endif; ?>
 

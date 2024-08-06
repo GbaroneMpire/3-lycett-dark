@@ -23,10 +23,10 @@
 
 .lct-hero__logo path, .lct-hero__logo polygon, .lct-hero__logo line, .lct-hero__logo circle, .lct-hero__logo rect {
   stroke: var(--lct-home-logo-color);
-  transition: fill .3s ease;
+  transition: fill 1s ease;
 }
 
-body.home:not(.lct-loaded) .lct-hero {
+body.home:not(.lct-home-intro-done) .lct-hero {
   --lct-home-logo-color: #222222;
 }
 
@@ -93,11 +93,11 @@ body.home:not(.lct-loaded) .lct-hero {
   bottom: 0;
   z-index: 10;
   background: white;
-  transition: all .3s ease;
+  transition: all 1s ease;
   visibility: visible;
 }
 
-body.home.lct-loaded .lct-hero #intro-cover {
+body.home.lct-home-intro-done .lct-hero #intro-cover {
   background: transparent;
   pointer-events: none;
   visibility: hidden;

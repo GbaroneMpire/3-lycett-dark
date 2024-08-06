@@ -6,6 +6,8 @@ const LCT_Theme = (function(){
 
   function afterLoad(){
     body.classList.add('lct-loaded');
+
+    setTimeout( () => body.classList.add('lct-home-intro-done'), 500);
   }
 
   function init(){
@@ -15,7 +17,7 @@ const LCT_Theme = (function(){
   return {
     init: init
   }
-  
+
 })();
 
 LCT_Theme.init();
