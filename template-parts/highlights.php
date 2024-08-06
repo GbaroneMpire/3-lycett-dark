@@ -42,13 +42,13 @@
 
                   <div class="lct-inner position-relative d-flex flex-column justify-content-end p-5">
 
-                    <div class="lct-highlight-slide__background lct-background-cover">
+                    <div class="lct-highlight-slide__background">
                       <?= wp_get_attachment_image($slide['background_image']['ID'], null, null, array(
                         'class' => 'lct-object-fit'
                       )); ?>
                     </div>
   
-                    <div class="lct-highlight-slide_text-wrapper text-center position-relative py-5 px-3">
+                    <div class="lct-highlight-slide_text-wrapper text-center position-relative py-4 px-3">
   
                       <h4 class="lct-highlight-slide__heading"><?= $slide['heading'] ?></h4>
   
