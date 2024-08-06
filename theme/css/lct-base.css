@@ -1,0 +1,158 @@
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins-Regular.woff2') format('woff2'),
+      url('./fonts/Poppins-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins-Medium.woff2') format('woff2'),
+      url('./fonts/Poppins-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins-Bold.woff2') format('woff2'),
+      url('./fonts/Poppins-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('./fonts/Roboto-Regular.woff2') format('woff2'),
+      url('./fonts/Roboto-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('./fonts/Roboto-Bold.woff2') format('woff2'),
+      url('./fonts/Roboto-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('./fonts/Roboto-Medium.woff2') format('woff2'),
+      url('./fonts/Roboto-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  font-size: calc(var(--lct-html-scale) * .8);
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size:var(--lct-font-size-body);
+  font-family: var(--lct-font-family);
+  font-weight: 400;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6, span, a, .lct-main-heading {
+  line-height: 1;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6, .lct-main-heading {
+  color: var( --lct-color-heading);
+  margin-bottom: .75em;
+}
+
+h1, h2, .lct-main-heading {
+  font-size: calc(var(--lct-font-size-body) * 2.8);
+}
+
+h4 {
+  font-size: calc(var(--lct-font-size-body) * 1.25);
+}
+
+figure {
+  margin: 0;
+}
+
+p {
+  line-height: 1.6;
+}
+
+.lct-section {
+  padding-top: clamp(40px, 7%, 100px);
+}
+
+.lct-gallery-section {
+  padding: 5% 0 6%;
+}
+
+/* HEADER */
+a.navbar-brand {
+  max-width: 190px;
+}
+
+#navbar {
+  min-height: var(--lct-header-height);
+}
+
+#navbar a {
+  color: black;
+  padding: 1em;
+}
+
+/* FOOTER */
+footer {
+  background-color: #222222 !important;
+  font-size: 11px;
+  font-weight: 500;
+  font-family: var(--sf-roboto);
+}
+
+footer, footer a{
+  color: #c5c5c5;
+}
+
+.mpire-m,
+footer a.mpire-link:hover {
+ color: #c51520;
+}
+
+.dev-copyright {
+  color: #717171;
+}
+
+/* Photoswipe */
+.pswp__caption__center {
+  max-width: 900px !important;
+  padding: 2em 1em !important;
+  text-align: center !important;
+}
+
+@media (min-width: 600px) {
+  html {
+    font-size: calc(var(--lct-html-scale) * .9);
+  }
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: var(--lct-html-scale);
+  }
+}
+
+@media (min-width: 1400px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1400px;
+  }
+}
