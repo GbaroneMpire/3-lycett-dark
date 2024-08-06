@@ -37,8 +37,6 @@
                     $str_to_insert = ' muted="muted" playsinline="playsinline" autoplay="on" loop="on" ';
                     $newstr = substr_replace($video_bg, $str_to_insert, $vid_string_length - 2, 0);
 
-                    echo $newstr;
-
                     echo do_shortcode($newstr);
                   else:
                     echo $video_bg;
