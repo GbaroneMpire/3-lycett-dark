@@ -55,9 +55,11 @@ function b4st_enqueues() {
 	wp_register_script('pswp-js-default', 'https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe-ui-default.min.js', false, '4.1.3', null);
 	wp_enqueue_script('pswp-js-default');
 
-
 	wp_register_script('b4st', get_template_directory_uri() . '/theme/js/b4st.js', false, null, true);
 	wp_enqueue_script('b4st');
+
+	wp_register_script('lct-theme-js', get_template_directory_uri() . '/theme/js/lct-theme.js', false, null, true);
+	wp_enqueue_script('lct-theme-js');
 
 	if (is_singular() && comments_open() && get_option('thread_comments')) {
 		wp_enqueue_script('comment-reply');
