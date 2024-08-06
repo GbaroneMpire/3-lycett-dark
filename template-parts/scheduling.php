@@ -13,23 +13,33 @@
 
 <div id="lct-scheduling-section" class="lct-scheduling lct-section pt-5">
 
-  <?php if($bg): ?>
-    <div class="lct-scheduling-section__background lct-background-cover">
-      <?= wp_get_attachment_image($bg['ID'], 'lct-hero', false, array(
-        'class' => 'lct-object-fit',
-        'loading' => 'lazy'
-      ) ); ?>
+  <?php if($heading): ?>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2 class="lct-schduling-section__heading"><?= $heading; ?></h2>
+        </div>
+      </div>
     </div>
   <?php endif; ?>
 
-  <div class="container lct-smaller">
-    <div class="row">
-      <div class="col">
-        <?php if($heading): ?>
-          <h2><?= $heading; ?></h2>
-        <?php endif; ?>
-        <?= $fields['embed'] ?>
+  <div class="lct-inner h-100 w-100 py-5 position-relative">
+    <?php if($bg): ?>
+      <div class="lct-scheduling-section__background lct-background-cover">
+        <?= wp_get_attachment_image($bg['ID'], 'lct-hero', false, array(
+          'class' => 'lct-object-fit',
+          'loading' => 'lazy'
+        ) ); ?>
+      </div>
+    <?php endif; ?>
+
+    <div class="container lct-smaller">
+      <div class="row">
+        <div class="col">
+          <?= $fields['embed'] ?>
+        </div>
       </div>
     </div>
+
   </div>
 </div>
