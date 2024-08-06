@@ -7,7 +7,7 @@ const LCT_Theme = (function(){
   function afterLoad(){
     body.classList.add('lct-loaded');
 
-    let vid = document.querySelector("#video-18-1_html5");
+    const vid = document.querySelector(".wp-video-shortcode");
     // vid.oncanplay = function() {
     //   body.classList.add('lct-home-intro-done')
     // };
@@ -18,6 +18,10 @@ const LCT_Theme = (function(){
 
   function init(){
     window.addEventListener('DOMContentLoaded', afterLoad);
+
+    window.onbeforeunload = function () {
+      window.scrollTo(0, 0);
+    }
   }
 
   return {
