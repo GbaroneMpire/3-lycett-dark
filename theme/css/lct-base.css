@@ -113,6 +113,12 @@ body.home a.navbar-brand svg path,
 body.home a.navbar-brand svg line,
 body.home a.navbar-brand svg circle {
   fill: var(--lct-color-dark-text);
+}
+
+body.home a.navbar-brand svg path,
+body.home a.navbar-brand svg line,
+body.home a.navbar-brand svg circle,
+body.home a.navbar-brand svg rect {
   stroke: var(--lct-color-dark-text);
 }
 
