@@ -8,10 +8,12 @@ const LCT_Theme = (function(){
     body.classList.add('lct-loaded');
 
     setTimeout(()=> {
-      const vid = document.querySelector(".wp-video-shortcode");
-      vid.oncanplay = function() {
-        body.classList.add('lct-home-intro-done')
-      };
+      // const vid = document.querySelector(".wp-video-shortcode");
+      // vid.oncanplay = function() {
+   
+      // };
+
+      body.classList.add('lct-home-intro-done')
     }, 1000);
 
   }
