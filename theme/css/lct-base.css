@@ -113,7 +113,7 @@ body.home a.navbar-brand svg path,
 body.home a.navbar-brand svg line,
 body.home a.navbar-brand svg circle {
   fill: var(--lct-color-dark-text);
-  stroke: var(--lct-home-logo-color);
+  stroke: var(--lct-color-dark-text);
 }
 
 #navbar {
