@@ -12,6 +12,9 @@
   $video_bg = $fields['video_background'];
   $buttons = $fields['buttons'];
   $show_logo = $fields['add_site_logo'];
+  $subtext = $fields['subtext'];
+  $headline = $fields['headline'];
+
 ?>
 
 <section class="lct-hero">
@@ -25,19 +28,18 @@
         <div class="lct-hero__content position-relative d-flex align-items-center">
           
           <?php 
-
             if ($bg || $video_bg): ?>
               <figure class="lct-hero__background lct-background-cover"> <?php
 
                 if($video_bg):   
 
                   if (is_string($video_bg)):
-        
-                    $vid_string_length = strlen($video_bg);
-                    $str_to_insert = ' muted="muted" autoplay="on" loop="on" playsinline ';
-                    $newstr = substr_replace($video_bg, $str_to_insert, $vid_string_length - 2, 0);
 
-                    echo do_shortcode($newstr);
+                    $vid_string_length = strlen($video_bg);
+                    $str_to_insert = ' muted="muted" playsinline="playsinline" autoplay="on" loop="on" ';
+                    $shortcode_string = substr_replace($video_bg, $str_to_insert, $vid_string_length - 2, 0);
+
+                    echo do_shortcode($shortcode_string);
                   else:
                     echo $video_bg;
                   endif;
@@ -47,7 +49,7 @@
                     'class' => 'lct-object-fit bottom'
                   )); 
                 endif; ?>
-            
+
               </figure><?php 
             endif; 
           ?>
@@ -60,21 +62,25 @@
 
                   <div class="col-sm d-flex flex-column lct-gap-1 lct-hero__text-content">
 
-                    <?php 
-                      if ($show_logo):
-                        get_template_part('/template-parts/logo', 'square');
-                      endif;
-                    ?>
+                    <?php if ($show_logo): ?>
+                        <div class="lct-hero__logo">
+                          <?= get_template_part('/template-parts/logo', 'square'); ?>
+                        </div> 
+                    <?php endif; ?>
 
-                    <span class="lct-hero__subtext display-block text-uppercase">
-                      <?= $fields['subtext']; ?>
-                    </span>
-          
-                    <span class="lct-hero__headline">
-                      <?= $fields['headline']; ?>
-                    </span>
+                    <?php if($subtext): ?>
+                      <span class="lct-hero__subtext display-block text-uppercase">
+                        <?= $subtext; ?>
+                      </span>
+                    <?php endif; ?>
+                      
+                    <?php if($headline): ?>
+                      <span class="lct-hero__headline">
+                        <?= $fields['headline']; ?>
+                      </span>
+                    <?php endif; ?>
 
-                    <div class="lct-hero__buttons">
+                    <div class="lct-hero__buttons d-flex justify-content-between">
                       <?php 
                         if($buttons): 
                       
@@ -84,9 +90,7 @@
                               $link_target = $button['target'] ? $button['target'] : '_self';
                             ?>
 
-                              <div class="lct-hero__buttons">
-                                <a href="<?= esc_url($button['url']) ?>" target="<?= esc_attr($link_target) ?>" class="lct-button"><?= esc_html($button['title']) ?></a>
-                              </div> <?php
+                              <a href="<?= esc_url($button['url']) ?>" target="<?= esc_attr($link_target) ?>" class="lct-button"><?= esc_html($button['title']) ?></a><?php
 
                           endforeach;
                         endif; 
