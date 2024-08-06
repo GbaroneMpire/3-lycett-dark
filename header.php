@@ -9,12 +9,13 @@
   <style>
     :root {
       --lct-header-height: 80px;
+      --lct-background-color: #222222;
       --lct-html-scale: 62.5%;
       --lct-font-family: 'Poppins', sans-serif;
       --lct-font-size-body: 1.6rem;
       --lct-button-background: #FFFFFF;
       --lct-button-text: #000000;
-      --lct-color-heading: #000000;
+      --lct-color-heading: #FFFFFF;
 
       --lct-color-bg-accent: #e0d2c9;
     }
