@@ -14,18 +14,18 @@
   $show_logo = $fields['add_site_logo'];
   $subtext = $fields['subtext'];
   $headline = $fields['headline'];
-
+  $is_fullscreen = $fields['enable_fullscreen'];
 ?>
 
 <section class="lct-hero">
 
   <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/theme/css/hero.css">
 
-  <div class="container-xl p-0">
+  <div class="p-0<?= (!$is_fullscreen) ? ' container-xl' : '' ?>">
     <div class="row no-gutters">
 
       <div class="col-lg">
-        <div class="lct-hero__content position-relative d-flex align-items-center">
+        <div class="lct-hero__content position-relative d-flex align-items-center"<?= ($is_fullscreen) ? ' style="min-height:100vh;"' : '' ?>>
           
           <?php 
             if ($bg || $video_bg): ?>
@@ -60,7 +60,7 @@
 
                 <div class="row">
 
-                  <div class="col-sm d-flex flex-column lct-gap-1 lct-hero__text-content">
+                  <div class="col-sm d-flex flex-column lct-gap-1 align-items-center lct-hero__text-content">
 
                     <?php if ($show_logo): ?>
                         <div class="lct-hero__logo">
@@ -80,7 +80,7 @@
                       </span>
                     <?php endif; ?>
 
-                    <div class="lct-hero__buttons d-flex justify-content-between">
+                    <div class="lct-hero__buttons d-flex lct-gap-1">
                       <?php 
                         if($buttons): 
                       
