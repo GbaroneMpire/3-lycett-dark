@@ -25,7 +25,7 @@
 
   <?php if($icon_handle): ?>
     <figure class="lct-callout__icon">
-      <i class="<?= $icon_handle ?>"></i>
+      <i class="fal fa-<?= $icon_handle ?>"></i>
     </figure>
   <?php endif; ?>
 
