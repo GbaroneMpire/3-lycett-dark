@@ -7,10 +7,12 @@ const LCT_Theme = (function(){
   function afterLoad(){
     body.classList.add('lct-loaded');
 
-    const vid = document.querySelector(".wp-video-shortcode");
-    vid.oncanplay = function() {
-      body.classList.add('lct-home-intro-done')
-    };
+    setTimeout(()=> {
+      const vid = document.querySelector(".wp-video-shortcode");
+      vid.oncanplay = function() {
+        body.classList.add('lct-home-intro-done')
+      };
+    }, 1000);
 
   }
 
