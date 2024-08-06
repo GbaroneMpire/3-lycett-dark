@@ -11,10 +11,10 @@
   $bg = $fields['background_image'];
 ?>
 
-<div id="lct-scheduling-section" class="lct-scheduling lct-section pt-5">
+<div id="lct-scheduling-section" class="lct-scheduling lct-section pt-5 mb-0 justify-content-end">
 
   <?php if($heading): ?>
-    <div class="container">
+    <div class="container mb-5">
       <div class="row">
         <div class="col">
           <h2 class="lct-schduling-section__heading"><?= $heading; ?></h2>
