@@ -32,7 +32,12 @@
                 if($video_bg):   
 
                   if (is_string($video_bg)):
-                    echo do_shortcode($video_bg);
+        
+                    $vid_string_length = strlen($video_bg);
+                    $str_to_insert = ' muted="muted" autoplay="on" loop="on"';
+                    $newstr = substr_replace($video_bg, $str_to_insert, $vid_string_length - 2, 0);
+
+                    echo do_shortcode($newstr);
                   else:
                     echo $video_bg;
                   endif;
