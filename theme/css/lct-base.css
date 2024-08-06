@@ -104,6 +104,11 @@ a.navbar-brand {
   max-width: 190px;
 }
 
+a.navbar-brand svg {
+  width: 100%;
+  display: block;
+}
+
 #navbar {
   min-height: var(--lct-header-height);
 }
