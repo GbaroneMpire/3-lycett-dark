@@ -10,11 +10,18 @@
 
   <section class="container lct-smaller lct-title-section">
     <div class="row">
-      <div class="col">
-        <div class="lct-grid grid-lg-4">
-            <h2><?= $fields['heading'] ?></h2>
-        </div>
+      <div class="col-md-6">
+        <h2 class="lct-highlights__heading lct-main-heading"><?= $fields['heading'] ?></h2>
       </div>
+
+      <?php if($description): ?>
+        <div class="col-md-6">
+          <div class="lct-highlights__description">
+              <p><?= $fields['description'] ?></p>
+          </div>
+        </div>
+      <?php endif; ?>
+      
     </div>
   </section>
 

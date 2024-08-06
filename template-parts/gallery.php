@@ -17,16 +17,12 @@
   <script defer src="<?= get_template_directory_uri() ?>/theme/js/gallery.js"></script>
 
   <?php if($filters): ?>
-    <section class="lct-filters align-items-start d-flex flex-column lct-gap-2 p-4 p-lg-0">
+    <section class="lct-filters align-items-start d-flex lct-gap-2 p-4 p-lg-0">
       <button class=" lct-filter-button text-white text-uppercase lct-active" data-filter="*">All</button>
       <?php foreach($filters as $filter): ?>
         <button class="lct-filter-button text-white text-uppercase" data-filter=".<?= $filter['value'] ?>"><?= $filter['label'] ?></button>
       <?php endforeach; ?>        
     </section>
-  <?php endif; ?>
-
-  <?php if($description): ?>
-    <section class="lct-gallery__description p-4 p-lg-0"><?= $description ?></section>
   <?php endif; ?>
 
   <?php if($gallery_images): ?>
