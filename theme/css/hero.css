@@ -3,6 +3,19 @@
   color: white;
 }
 
+.lct-hero__logo {
+  max-width: 270px;
+  width: 100%;
+}
+
+.lct-hero__logo path, .lct-hero__logo polygon, .lct-hero__logo line, .lct-hero__logo circle {
+  fill: white;
+}
+
+.lct-hero__logo path, .lct-hero__logo polygon, .lct-hero__logo line, .lct-hero__logo circle, .lct-hero__logo rect {
+  stroke: white;
+}
+
 .lct-hero__text-content {
   font-family: var(--lct-font-family);
   font-weight: 400;
@@ -16,10 +29,6 @@
 
 .lct-hero__subtext {
   font-size: max(20%, var(--lct-font-size-body));
-}
-
-.lct-hero__buttons {
-  font-size: 0;
 }
 
 .lct-hero__text-container {
