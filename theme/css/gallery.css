@@ -27,13 +27,17 @@
   transform-origin: left;
 }
 
+.lct-filter-block {
+  padding: 4em 2% 4em;
+}
+
 .lct-gallery-image, .grid-sizer {
   width: 50%;
 }
 
 .lct-gallery-image {
-  padding-right: 1em;
-  padding-bottom: 1em;
+  padding-right: .5em;
+  padding-bottom: .5em;
 }
 
 .lct-gallery__description {
@@ -42,6 +46,7 @@
 
 .lct-gallery {
   min-height: 650px;
+  transform: translateY(-4em);
 }
 
 .lct-gallery > .lct-inner {
@@ -56,4 +61,10 @@
 
 .lct-gallery .lct-gallery-track {
   overflow-y: auto;
+}
+
+@media only screen and (min-width: 1024px) {
+  .lct-gallery-image, .grid-sizer {
+    width: 20%;
+  }  
 }

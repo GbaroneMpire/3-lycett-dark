@@ -19,7 +19,7 @@
   <section class="container lct-smaller p-0 p-lg-5" style="background-color: #000000">
 
     <div class="row">
-      <div class="col">
+      <div class="col lct-filter-block">
       <?php if($description): ?>
           <section class="lct-gallery__description p-4 p-lg-0 text-center"><?= $description ?></section>
         <?php endif; ?>
