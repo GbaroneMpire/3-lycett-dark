@@ -53,6 +53,15 @@
   box-shadow: 0 0 10px 0 rgb(0 0 0/10%);
 }
 
+.flickity-button {
+  background: none !important;
+  border: none !important;
+  outline: none !important;
+  color: white !important;
+  box-shadow: none !important;
+  font-size: 2em !important;
+}
+
 .flickity-prev-next-button > svg {
   height: .75em !important;
   width: .75em !important;
