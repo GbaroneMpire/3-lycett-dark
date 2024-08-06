@@ -22,7 +22,9 @@
 
       --lct-color-dark-text: #FFFFFF;
       --lct-color-light-text: #000000;
+
     }
+
   </style>
 </head>
 

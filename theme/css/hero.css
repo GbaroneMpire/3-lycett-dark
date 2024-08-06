@@ -1,3 +1,10 @@
+section.lct-hero {
+  z-index: 10;
+  position: relative;
+
+  --lct-home-logo-color: #FFFFFF;
+}
+
 .lct-hero__content {
   height: clamp(200px, 80vw, 700px);
   color: white;
@@ -9,11 +16,16 @@
 }
 
 .lct-hero__logo path, .lct-hero__logo polygon, .lct-hero__logo line, .lct-hero__logo circle {
-  fill: white;
+  fill: var(--lct-home-logo-color);
 }
 
 .lct-hero__logo path, .lct-hero__logo polygon, .lct-hero__logo line, .lct-hero__logo circle, .lct-hero__logo rect {
-  stroke: white;
+  stroke: var(--lct-home-logo-color);
+}
+
+
+body.home:not(.lct-loaded) {
+  --lct-home-logo-color: #222222;
 }
 
 .lct-hero__text-content {
@@ -69,6 +81,16 @@
 .lct-hero .wp-video video {
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+#intro-cover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  background: white;
 }
 
 /* .lct-hero__text-container::before {
