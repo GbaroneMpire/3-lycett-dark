@@ -9,7 +9,7 @@
 
 .lct-highlight-slide__heading,
 .lct-highlight-slide__description {
-  color: var( --lct-color-light-text);
+  color: var(--lct-color-dark-text);
 }
 
 .lct-highlight-slide__heading {
@@ -24,7 +24,7 @@
 }
 
 .lct-highlight-slide_text-wrapper {
-  background: rgba(255, 255, 255, .5);
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .lct-highlight-slide__preview {
@@ -37,7 +37,7 @@
 .lct-highlight-slide__summary {
   text-transform: uppercase;
   margin-top: .75em;
-  color: var(--lct-color-light-text);
+  color: var(--lct-color-dark-text);
 }
 
 .lct-highlight-slide__description > details[open] + .lct-highlight-slide__preview {
