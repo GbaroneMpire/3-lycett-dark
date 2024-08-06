@@ -29,7 +29,7 @@
     <div class="row no-gutters">
 
       <div class="col-lg">
-        <div class="lct-hero__content position-relative d-flex align-items-center"<?= ($is_fullscreen) ? ' style="min-height:100vh;"' : '' ?>>
+        <div class="lct-hero__content position-relative d-flex align-items-center"<?= ($is_fullscreen) ? ' style="min-height:100svh;"' : '' ?>>
           
           <?php 
             if ($bg || $video_bg): ?>

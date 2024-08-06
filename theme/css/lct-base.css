@@ -92,7 +92,7 @@ p {
 }
 
 .lct-section {
-  padding-top: clamp(40px, 7%, 100px);
+  padding-top: var(--lct-section-padding);
 }
 
 .lct-gallery-section {
@@ -177,6 +177,15 @@ footer a.mpire-link:hover {
 
 .dev-copyright {
   color: #717171;
+}
+
+/* HOMEPAGE */
+body.home .lct-section {
+  padding: var(--lct-section-padding) 0;
+}
+
+body.home .lct-section:not(.lct-callouts) {
+  min-height: 100vh;
 }
 
 /* Photoswipe */

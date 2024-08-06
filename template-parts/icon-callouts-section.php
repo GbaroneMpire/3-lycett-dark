@@ -14,7 +14,7 @@
 
 <?php if ($callouts): ?>
   
-  <section class="lct-callouts lct-section border-bottom">
+  <section class="lct-callouts lct-section border-bottom border-top">
     <div class="container-md lct-smaller">
       <div class="row">
         <?php 

@@ -9,6 +9,7 @@
   <style>
     :root {
       --lct-header-height: 80px;
+      --lct-section-padding: clamp(40px, 7%, 100px);
       --lct-background-color: #222222;
       --lct-html-scale: 62.5%;
       --lct-font-family: 'Poppins', sans-serif;
