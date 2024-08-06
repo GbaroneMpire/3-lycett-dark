@@ -6,7 +6,7 @@
 
 <?php extract($args); ?>
 
-<section class="lct-gallery-section lct-section">
+<section id="lct-gallery-section" class="lct-gallery-section lct-section">
 
   <section class="container lct-smaller lct-title-section">
     <div class="row">
