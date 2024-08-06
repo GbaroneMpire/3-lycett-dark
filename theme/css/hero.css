@@ -21,7 +21,7 @@
   fill: var(--lct-home-logo-color);
 }
 
-.lct-hero__logo path, .lct-hero__logo polygon, .lct-hero__logo line, .lct-hero__logo rect {
+.lct-hero__logo path, .lct-hero__logo polygon, .lct-hero__logo line, .lct-hero__logo circle, .lct-hero__logo rect {
   stroke: var(--lct-home-logo-color);
   transition: fill 1s ease;
 }
