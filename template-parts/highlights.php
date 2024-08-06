@@ -48,7 +48,7 @@
                       )); ?>
                     </div>
   
-                    <div class="lct-highlight-slide_text-wrapper text-center position-relative p-5">
+                    <div class="lct-highlight-slide_text-wrapper text-center position-relative py-5 px-3">
   
                       <h4 class="lct-highlight-slide__heading"><?= $slide['heading'] ?></h4>
   
