@@ -11,7 +11,7 @@
   $bg = $fields['background_image'];
 ?>
 
-<div id="lct-scheduling-section" class="lct-scheduling lct-section pt-5 mb-0 justify-content-end">
+<div id="lct-scheduling-section" class="lct-scheduling lct-section pt-5 pb-0">
 
   <?php if($heading): ?>
     <div class="container mb-5">
