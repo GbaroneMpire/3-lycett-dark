@@ -24,6 +24,8 @@ function b4st_setup()
 	update_option('medium_size_w', 730); /* internal max-width of col-8 */
 	update_option('large_size_w', 1110); /* internal max-width of col-12 */
 
+	add_image_size('lct-hero', 2400);
+
 	if ( ! isset($content_width) ) {
 		$content_width = 1100;
 	}
