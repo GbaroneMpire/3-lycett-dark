@@ -49,6 +49,21 @@
 .lct-hero .wp-video, .mejs-container, video {
   width: 100% !important;
   height: 100% !important;
+  pointer-events: none;
+}
+
+.mejs-controls {
+  opacity: 1 !important;
+  background: transparent !important;
+}
+
+.mejs-controls > *:not(.mejs-volume-button) {
+  opacity: 0;
+}
+
+.mejs-volume-button {
+  opacity: 1 !important;
+  pointer-events: auto !important;
 }
 
 .lct-hero .wp-video video {
