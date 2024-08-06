@@ -37,6 +37,16 @@
           justify-content: center;
 }
 
+.lct-hero .wp-video, .mejs-container, video {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.lct-hero .wp-video video {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 /* .lct-hero__text-container::before {
   content: '';
   position: absolute;
