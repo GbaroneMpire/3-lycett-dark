@@ -15,7 +15,7 @@ const LCT_Theme = (function(){
   return {
     init: init
   }
-
-});
+  
+})();
 
 LCT_Theme.init();
