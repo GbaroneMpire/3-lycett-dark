@@ -19,6 +19,10 @@
 
 <section class="lct-hero">
 
+<?php if(is_front_page()): ?>
+    <div id="intro-cover"></div>
+  <?php endif; ?>
+
   <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/theme/css/hero.css">
 
   <div class="p-0<?= (!$is_fullscreen) ? ' container-xl' : '' ?>">
@@ -110,8 +114,4 @@
 
     </div>
   </div>
-
-  <?php if(is_front_page()): ?>
-    <div id="intro-cover"></div>
-  <?php endif; ?>
 </section>
