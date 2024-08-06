@@ -159,6 +159,7 @@ body.home #navbar {
 
 body.home #navbar a {
   color: var(--lct-color-dark-text);
+  text-transform: uppercase;
 }
 
 .intro-cover {
@@ -216,6 +217,10 @@ body.home .lct-section:not(.lct-callouts) {
           justify-content: center;
 }
 
+body.home .lct-callouts {
+  margin: 3% 0 6%;
+}
+
 /* Photoswipe */
 .pswp__caption__center {
   max-width: 900px !important;
@@ -225,6 +230,41 @@ body.home .lct-section:not(.lct-callouts) {
 
 .calendly-spinner > div {
   background: var(--lct-color-dark-text) !important;
+}
+
+#navbar a:before,
+.lct-filters button:before {
+  content: '';
+  position: absolute;
+  top: auto;
+  left: 0;
+  right: 0;
+  bottom: -.35em;
+  height: .15em;
+  background: #1472ba;
+  -webkit-transform: scaleX(0);
+      -ms-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: right;
+      -ms-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition: -webkit-transform .6s cubic-bezier(1, 0, 0, 1);
+  transition: -webkit-transform .6s cubic-bezier(1, 0, 0, 1);
+  -o-transition: transform .6s cubic-bezier(1, 0, 0, 1);
+  transition: transform .6s cubic-bezier(1, 0, 0, 1);
+  transition: transform .6s cubic-bezier(1, 0, 0, 1), -webkit-transform .6s cubic-bezier(1, 0, 0, 1);
+}
+
+#navbar a:hover:before,
+#navbar li.lct-active a:before,
+.lct-filters button.lct-active:before,
+.lct-filters button:hover:before {
+  -webkit-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: left;
+      -ms-transform-origin: left;
+          transform-origin: left;
 }
 
 @media (min-width: 600px) {
