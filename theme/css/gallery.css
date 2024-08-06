@@ -36,7 +36,7 @@
   padding-bottom: 1em;
 }
 
-/* @media only screen and (min-width: 1023px) {
+@media only screen and (min-width: 1023px) {
   
   .lct-gallery-grid {
     grid-template-columns: repeat(12, 1fr);
@@ -73,4 +73,4 @@
     overflow-y: auto;
   }
 
-} */
+}
