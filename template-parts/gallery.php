@@ -16,22 +16,27 @@
   <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/theme/css/gallery.css">  
   <script defer src="<?= get_template_directory_uri() ?>/theme/js/gallery.js"></script>
 
-  <section style="background-color: #000000;">
-    <?php if($description): ?>
-      <section class="lct-gallery__description p-4 p-lg-0 text-center"><?= $description ?></section>
-    <?php endif; ?>
-  
-  
-    <?php if($filters): ?>
-      <section class="lct-filters d-flex justify-content-center align-items-center lct-gap-3 py-5">
-  
-        <button class=" lct-filter-button text-white text-uppercase lct-active" data-filter="*">All</button>
-        <?php foreach($filters as $filter): ?>
-          <button class="lct-filter-button text-white text-uppercase" data-filter=".<?= $filter['value'] ?>"><?= $filter['label'] ?></button>
-        <?php endforeach; ?>        
-  
-      </section>
-    <?php endif; ?>
+  <section class="container lct-smaller p-0 p-lg-5" style="background-color: #000000">
+
+    <div class="row">
+      <div class="col">
+      <?php if($description): ?>
+          <section class="lct-gallery__description p-4 p-lg-0 text-center"><?= $description ?></section>
+        <?php endif; ?>
+      
+      
+        <?php if($filters): ?>
+          <section class="lct-filters d-flex justify-content-center align-items-center lct-gap-3 py-5">
+      
+            <button class=" lct-filter-button text-white text-uppercase lct-active" data-filter="*">All</button>
+            <?php foreach($filters as $filter): ?>
+              <button class="lct-filter-button text-white text-uppercase" data-filter=".<?= $filter['value'] ?>"><?= $filter['label'] ?></button>
+            <?php endforeach; ?>        
+      
+          </section>
+        <?php endif; ?>
+      </div>
+    </div>
   </section>
 
 

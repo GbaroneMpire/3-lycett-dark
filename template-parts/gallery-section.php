@@ -21,17 +21,10 @@
   <section class="gallery-section text-white p-0">
     <div class="row no-gutters">
       <div class="col">
-
-        <div class="container lct-smaller p-0 p-lg-5">
-          <div class="row no-gutters">
-            <div class="col">
-              <?php get_template_part('/template-parts/gallery', null, array(
-                'fields' => $fields['lct_gallery']
-              )); ?>
-            </div>
-          </div>
-        </div>
-
+      <?php get_template_part('/template-parts/gallery', null, array(
+        'fields' => $fields['lct_gallery']
+      )); ?>
+      
       </div>
     </div>
   </section>
