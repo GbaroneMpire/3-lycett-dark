@@ -213,6 +213,10 @@ body.home .lct-section:not(.lct-callouts) {
   text-align: center !important;
 }
 
+.calendly-spinner > div {
+  background: var(--lct-color-dark-text);
+}
+
 @media (min-width: 600px) {
   html {
     font-size: calc(var(--lct-html-scale) * .9);
