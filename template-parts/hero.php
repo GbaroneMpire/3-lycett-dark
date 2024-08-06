@@ -30,7 +30,13 @@
               <figure class="lct-hero__background lct-background-cover"> <?php
 
                 if($video_bg):   
-                  echo $video_bg;
+
+                  if (is_string($video_bg)):
+                    echo do_shortcode($video_bg);
+                  else:
+                    echo $video_bg;
+                  endif;
+
                 elseif($bg):
                   echo wp_get_attachment_image( $bg, 'lct-banner', null, array(
                     'class' => 'lct-object-fit bottom'
