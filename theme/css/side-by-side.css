@@ -24,11 +24,3 @@
   font-size: clamp(3rem, 2vw, 5rem);
   padding: 0 .25em;
 }
-
-@media only screen and (min-width: 1024px) {
-  .lct-side-by-side__image {
-    aspect-ratio: 1 / 1;
-    position: sticky;
-    top: 2%;
-  }
-}
