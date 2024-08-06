@@ -21,7 +21,7 @@
   }
 
 ?>
-<div class="lct-callout d-flex <?= $fields['layout'] ?> lct-gap-3 align-items-center pb-4 <?= $border_class ?> <?= $fields['text_align'] ?>">
+<div class="lct-callout d-flex <?= $fields['layout'] ?> lct-gap-3 align-items-center <?= $border_class ?> <?= $fields['text_align'] ?>">
 
   <?php if($icon_handle): ?>
     <figure class="lct-callout__icon">

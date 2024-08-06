@@ -21,6 +21,6 @@
 }
 
 .lct-side-by-side .lct-callout__icon {
-  font-size: clamp(3rem, 2vw, 5rem);
+  font-size: 3rem;
   padding: 0 .25em;
 }
