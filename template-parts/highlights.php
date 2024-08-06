@@ -10,7 +10,7 @@
   $slides = $fields['highlight_slides'];
 ?>
 
-<section class="lct-highlights lct-section">
+<section id="lct-highlights" class="lct-highlights lct-section">
 
   <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/theme/css/highlights.css">
 

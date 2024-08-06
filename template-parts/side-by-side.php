@@ -11,7 +11,7 @@
     $image = $fields['image'];
 ?>
 
-<section class="lct-side-by-side lct-section">
+<section id="lct-side-by-side" class="lct-side-by-side lct-section">
 
   <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/theme/css/side-by-side.css">
 
