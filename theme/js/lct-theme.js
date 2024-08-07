@@ -35,7 +35,7 @@ const LCT_Theme = (function(){
     let options = {
       root: document.querySelector("#scrollArea"),
       rootMargin: "0px",
-      threshold: .5
+      threshold: .25
     };
 
     let callback = (entries, observer) => {
