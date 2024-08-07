@@ -12,18 +12,6 @@
 ?>
 
 <div id="lct-scheduling-section" class="lct-scheduling lct-section pt-5 pb-0">
-
-  <?php if($heading): ?>
-    <div class="container mb-5">
-      <div class="row">
-        <div class="col">
-          <h2 class="lct-schduling-section__heading"><?= $heading; ?></h2>
-        </div>
-      </div>
-    </div>
-  <?php endif; ?>
-
-  <div class="lct-inner h-100 w-100 py-5 position-relative">
     <?php if($bg): ?>
       <div class="lct-scheduling-section__background lct-background-cover">
         <?= wp_get_attachment_image($bg['ID'], 'lct-hero', false, array(
@@ -35,11 +23,14 @@
 
     <div class="container lct-smaller">
       <div class="row">
+
+        <?php if($heading): ?>
+          <h2 class="lct-schduling-section__heading"><?= $heading; ?></h2>
+        <?php endif; ?>
+
         <div class="col">
           <?= $fields['embed'] ?>
         </div>
       </div>
     </div>
-
-  </div>
 </div>

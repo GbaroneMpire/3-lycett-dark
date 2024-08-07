@@ -24,3 +24,11 @@
   font-size: 3rem;
   padding: 0 .25em;
 }
+
+@media (min-width: 769px) {
+  body.home .lct-side-by-side__image {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 2%;
+  }
+}

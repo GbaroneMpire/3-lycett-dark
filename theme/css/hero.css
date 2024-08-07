@@ -52,6 +52,7 @@ body.home:not(.lct-home-intro-done) .lct-hero {
 
 .lct-hero__subtext {
   font-size: max(20%, var(--lct-font-size-body));
+  line-height: 1.4;
 }
 
 .lct-hero__text-container {

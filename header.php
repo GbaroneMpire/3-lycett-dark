@@ -10,7 +10,7 @@
   <style>
     :root {
       --lct-header-height: 80px;
-      --lct-section-padding: clamp(40px, 7%, 100px);
+      --lct-section-padding: 2%;
       --lct-background-color: #222222;
       --lct-html-scale: 62.5%;
       --lct-font-family: 'Century Gothic', sans-serif;
@@ -34,7 +34,7 @@
 
 <?php b4st_navbar_before();?>
 
-<nav id="navbar" class="navbar navbar-expand-md navbar-light">
+<nav id="navbar" class="navbar navbar-expand-lg <?= (is_front_page()) ? 'navbar-dark' : 'navbar-light' ?>">
   <div class="container">
 
     <?php b4st_navbar_brand(); ?>

@@ -73,7 +73,7 @@
                     <?php endif; ?>
 
                     <?php if($subtext): ?>
-                      <span class="lct-hero__subtext display-block text-uppercase">
+                      <span class="lct-hero__subtext display-block text-uppercase text-center">
                         <?= $subtext; ?>
                       </span>
                     <?php endif; ?>

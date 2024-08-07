@@ -162,6 +162,16 @@ body.home #navbar a {
   text-transform: uppercase;
 }
 
+.navbar-dark .navbar-toggler {
+  color: var(--lct-color-dark-text) !important;
+  border-color: var(--lct-color-dark-text);
+}
+
+.navbar-toggler-icon {
+  width: 3em;
+  height: 3em;
+}
+
 .intro-cover {
   position: fixed;
   top: 0;
@@ -232,46 +242,6 @@ body.home .lct-callouts {
   background: var(--lct-color-dark-text) !important;
 }
 
-#navbar a,
-.lct-filters button {
-  position: relative;
-}
-
-#navbar a:before,
-.lct-filters button:before {
-  content: '';
-  position: absolute;
-  top: auto;
-  left: 0;
-  right: 0;
-  bottom: -.35em;
-  height: .15em;
-  background: #1472ba;
-  -webkit-transform: scaleX(0);
-      -ms-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transform-origin: right;
-      -ms-transform-origin: right;
-          transform-origin: right;
-  -webkit-transition: -webkit-transform .6s cubic-bezier(1, 0, 0, 1);
-  transition: -webkit-transform .6s cubic-bezier(1, 0, 0, 1);
-  -o-transition: transform .6s cubic-bezier(1, 0, 0, 1);
-  transition: transform .6s cubic-bezier(1, 0, 0, 1);
-  transition: transform .6s cubic-bezier(1, 0, 0, 1), -webkit-transform .6s cubic-bezier(1, 0, 0, 1);
-}
-
-#navbar a:hover:before,
-#navbar li.lct-active a:before,
-.lct-filters button.lct-active:before,
-.lct-filters button:hover:before {
-  -webkit-transform: scaleX(1);
-      -ms-transform: scaleX(1);
-          transform: scaleX(1);
-  -webkit-transform-origin: left;
-      -ms-transform-origin: left;
-          transform-origin: left;
-}
-
 @media (min-width: 600px) {
   html {
     font-size: calc(var(--lct-html-scale) * .9);
@@ -282,10 +252,92 @@ body.home .lct-callouts {
   html {
     font-size: var(--lct-html-scale);
   }
+
+  #navbar a,
+  .lct-filters button {
+    position: relative;
+  }
+
+  #navbar a:before,
+  .lct-filters button:before {
+    content: '';
+    position: absolute;
+    top: auto;
+    left: 0;
+    right: 0;
+    bottom: -.35em;
+    height: .15em;
+    background: #1472ba;
+    -webkit-transform: scaleX(0);
+        -ms-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transform-origin: right;
+        -ms-transform-origin: right;
+            transform-origin: right;
+    -webkit-transition: -webkit-transform .6s cubic-bezier(1, 0, 0, 1);
+    transition: -webkit-transform .6s cubic-bezier(1, 0, 0, 1);
+    -o-transition: transform .6s cubic-bezier(1, 0, 0, 1);
+    transition: transform .6s cubic-bezier(1, 0, 0, 1);
+    transition: transform .6s cubic-bezier(1, 0, 0, 1), -webkit-transform .6s cubic-bezier(1, 0, 0, 1);
+  }
+
+  #navbar a:hover:before,
+  #navbar li.lct-active a:before,
+  .lct-filters button.lct-active:before,
+  .lct-filters button:hover:before {
+    -webkit-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: left;
+        -ms-transform-origin: left;
+            transform-origin: left;
+  }
 }
 
 @media (min-width: 1400px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl {
     max-width: 1400px;
+  }
+}
+
+@media (max-width: 768px) {
+  
+  #navbar > .container:has(.navbar-collapse.show) {
+    background-color: rgba(255,255,255,.75);
+  }
+  
+  #navbar > .container {
+    background-color: transparent;
+    -webkit-transition: background-color .3s ease;
+    -o-transition: background-color .3s ease;
+    transition: background-color .3s ease;
+    padding: .75em .5em;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  
+  body.home #navbar > .container:has(.navbar-collapse.show) a.navbar-brand svg path,
+  body.home #navbar > .container:has(.navbar-collapse.show) a.navbar-brand svg line,
+  body.home #navbar > .container:has(.navbar-collapse.show) a.navbar-brand svg circle {
+    fill: var(--lct-color-light-text);
+  }
+
+  body.home #navbar > .container:has(.navbar-collapse.show) a.navbar-brand svg path,
+  body.home #navbar > .container:has(.navbar-collapse.show) a.navbar-brand svg line,
+  body.home #navbar > .container:has(.navbar-collapse.show) a.navbar-brand svg circle,
+  body.home #navbar > .container:has(.navbar-collapse.show) a.navbar-brand svg rect {
+    stroke: var(--lct-color-light-text);
+  }
+
+  body.home #navbar {
+    color: black;
+    font-size: 2rem;
+    padding-bottom: 1em;
+  }
+
+  .navbar-dark body.home #navbar > .container:has(.navbar-collapse.show) .navbar-toggler {
+    color: var(--lct-color-light-text);
+    border-color: var(--lct-color-light-text);
   }
 }
