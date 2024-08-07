@@ -111,7 +111,7 @@
                 'loading' => 'lazy'
             )); ?>
 
-          <?= $img = wp_get_attachment_image(251, null, null, array(
+          <?= $img = wp_get_attachment_image(235, null, null, array(
             'class' => 'lct-object-fit lct-swap position-absolute',
             'loading' => 'lazy'
           )); ?>
