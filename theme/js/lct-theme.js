@@ -51,6 +51,8 @@ const LCT_Theme = (function(){
         }
 
         count++;
+
+        console.log(count);
       });
     };
     
