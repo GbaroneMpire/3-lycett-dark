@@ -40,7 +40,10 @@ const LCT_Theme = (function(){
 
     let callback = (entries, observer) => {
       entries.forEach((entry) => {
-        sbsImage.innerHTML = JSON.parse(sbsNext);
+
+        if (entry.isIntersecting) {
+          sbsImage.innerHTML = JSON.parse(sbsNext);
+        }
       });
     };
     
