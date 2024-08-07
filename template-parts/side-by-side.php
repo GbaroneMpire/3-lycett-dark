@@ -42,23 +42,27 @@
                           <h4><?= $title; ?></h4>
                         <?php endif; ?>
                         
-                        <div class="row no-gutters">
-                          <?php 
-                            foreach ($callouts as $callout): 
-                                $callout = $callout['callout']['lct_icon_callout']; 
-                              ?>
+                        <div class="lct-callout-section container">
 
-                                <div class="col-6 mb-5">
+                          <div class="row">
+                            <?php 
+                              foreach ($callouts as $callout): 
+                                  $callout = $callout['callout']['lct_icon_callout']; 
+                                ?>
+  
+                                  <div class="col-6 mb-5">
+  
+                                    <?php  get_template_part('template-parts/icon-callout', null, array(
+                                      'fields' => $callout
+                                    )); ?>
+  
+                                  </div> 
+                                  
+                                <?php
+                              endforeach;
+                            ?>
+                          </div>
 
-                                  <?php  get_template_part('template-parts/icon-callout', null, array(
-                                    'fields' => $callout
-                                  )); ?>
-
-                                </div> 
-                                
-                              <?php
-                            endforeach;
-                          ?>
                         </div>
 
                       </div> 
