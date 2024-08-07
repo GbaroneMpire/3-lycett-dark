@@ -38,7 +38,7 @@ const LCT_Theme = (function(){
       threshold: [.15, .2]
     };
 
-    let count;
+    let count = 0;
 
     let callback = (entries, observer) => {
       entries.forEach((entry) => {
