@@ -17,10 +17,21 @@
   aspect-ratio: 1 / 1;
 }
 
+.lct-callout-column {
+  position: sticky;
+  top: 2em;
+  background: var(--lct-background-color);
+}
+
+.lct-callout-column > h4 {
+  line-height: 2em;
+  margin: 0;
+}
+
 @media (min-width: 769px) {
   body.home .lct-side-by-side__image {
     position: -webkit-sticky;
     position: sticky;
-    top: 2%;
+    top: 15%;
   }
 }

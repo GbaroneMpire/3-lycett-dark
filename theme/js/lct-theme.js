@@ -4,7 +4,8 @@ const LCT_Theme = (function(){
 
   let canPlay = false;
 
-  const body = document.querySelector('body');
+  const body = document.querySelector('body'),
+        introSection = document.querySelector('#lct-side-by-side');
 
   const vid = document.querySelector(".wp-video-shortcode");
   vid.oncanplay = function() {
@@ -28,6 +29,21 @@ const LCT_Theme = (function(){
     }
 
     history.replaceState(null, null, ' ');
+
+    let options = {
+      root: document.querySelector("#scrollArea"),
+      rootMargin: "0px",
+      threshold: [.2, .5, .9]
+    };
+
+    let callback = (entries, observer) => {
+      entries.forEach((entry) => {
+        console.log(entry);
+      });
+    };
+    
+    let observer = new IntersectionObserver(callback, options);
+    observer.observe(introSection);
   }
 
   return {
