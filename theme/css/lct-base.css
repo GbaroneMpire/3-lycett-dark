@@ -336,8 +336,8 @@ body.home .lct-callouts {
     padding-bottom: 1em;
   }
 
-  .navbar-dark body.home #navbar > .container:has(.navbar-collapse.show) .navbar-toggler {
-    color: var(--lct-color-light-text);
-    border-color: var(--lct-color-light-text);
+  body.home .navbar-dark > .container:has(.navbar-collapse.show) .navbar-toggler {
+    color: var(--lct-color-light-text) !important;
+    border-color: var(--lct-color-light-text) !important;
   }
 }
