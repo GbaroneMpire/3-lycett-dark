@@ -5,7 +5,9 @@ const LCT_Theme = (function(){
   let canPlay = false;
 
   const body = document.querySelector('body'),
-        introSection = document.querySelector('#lct-side-by-side');
+        introSection = document.querySelector('#lct-side-by-side'),
+        sbsImage = document.querySelector('.lct-side-by-side__image'),
+        sbsNext = sbsImage.getAttribute('data-lct-img');
 
   const vid = document.querySelector(".wp-video-shortcode");
   vid.oncanplay = function() {
@@ -38,7 +40,7 @@ const LCT_Theme = (function(){
 
     let callback = (entries, observer) => {
       entries.forEach((entry) => {
-        console.log(entry);
+        sbsImage.innerHTML = JSON.parse(sbsNext);
       });
     };
     

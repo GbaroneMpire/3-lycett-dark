@@ -99,7 +99,7 @@
       
       <?php if($image): 
         
-          $img = wp_get_attachment_image($image['ID'], null, null, array(
+          $img = wp_get_attachment_image(251, null, null, array(
             'class' => 'lct-object-fit',
             'loading' => 'lazy'
           )); 
@@ -109,7 +109,10 @@
         <section class="col-md-6 position-relative p-0">
           
           <div class="lct-side-by-side__image" data-lct-img='<?= json_encode($img) ?>'>
-            <?= $img; ?>
+            <?= wp_get_attachment_image($image['ID'], null, null, array(
+                'class' => 'lct-object-fit',
+                'loading' => 'lazy'
+            )); ?>
           </div>
 
         </section>
