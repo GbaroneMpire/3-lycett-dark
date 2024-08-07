@@ -40,7 +40,7 @@
                   if (is_string($video_bg)):
 
                     $vid_string_length = strlen($video_bg);
-                    $str_to_insert = ' muted="muted" playsinline="playsinline" autoplay="on" loop="on" ';
+                    $str_to_insert = ' muted="muted" playsinline="1" autoplay="on" loop="on" ';
                     $shortcode_string = substr_replace($video_bg, $str_to_insert, $vid_string_length - 2, 0);
 
                     echo do_shortcode($shortcode_string);
