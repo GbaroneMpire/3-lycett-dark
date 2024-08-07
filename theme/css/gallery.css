@@ -19,20 +19,12 @@
   width: 50%;
 }
 
-/* .lct-gallery-image {
-  padding-right: 1.5em;
-  padding-bottom: 1.5em;
-} */
-
 .lct-gallery__description {
   padding: 0 1em;
 }
 
 .lct-gallery {
   min-height: 600px;
-  -webkit-transform: translateY(-4em);
-      -ms-transform: translateY(-4em);
-          transform: translateY(-4em);
 }
 
 .lct-gallery > .lct-inner {

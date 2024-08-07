@@ -19,6 +19,8 @@
 
 body.home .lct-hero__logo {
   opacity: 0;
+  -webkit-transition: .5s ease-out;
+  -o-transition: .5s ease-out;
   transition: .5s ease-out;
 }
 
@@ -32,7 +34,9 @@ body.home.lct-loaded .lct-hero__logo, body.home.no-js {
 
 .lct-hero__logo path, .lct-hero__logo polygon, .lct-hero__logo line, .lct-hero__logo circle, .lct-hero__logo rect {
   stroke: var(--lct-home-logo-color);
-  transition: fill 1s ease;
+  -webkit-transition: fill 1s ease, stroke 1s ease;
+  -o-transition: fill 1s ease, stroke 1s ease;
+  transition: fill 1s ease, stroke 1s ease;
 }
 
 body.home:not(.lct-home-intro-done) .lct-hero {
@@ -103,6 +107,8 @@ body.home:not(.lct-home-intro-done) .lct-hero {
   bottom: 0;
   z-index: 10;
   background: white;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
   transition: all 1s ease;
   visibility: visible;
 }
@@ -112,17 +118,3 @@ body.home.lct-home-intro-done .lct-hero #intro-cover {
   pointer-events: none;
   visibility: hidden;
 }
-
-/* .lct-hero__text-container::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  -webkit-clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
-          clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
-  background: rgba(0,0,0,.85);
-  width: max(40%, 20em)
-} */
-

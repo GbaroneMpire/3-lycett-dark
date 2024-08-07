@@ -113,10 +113,6 @@ p {
   padding: var(--lct-section-padding) 0;
 }
 
-.lct-gallery-section {
-  padding: 5% 0 6%;
-}
-
 /* HEADER */
 a.navbar-brand {
   max-width: 190px;
@@ -224,8 +220,12 @@ body.home .lct-section:not(.lct-callouts) {
 }
 
 body.home .lct-callouts {
-  margin: 0% 0 4%;
   padding: 3% 0;
+}
+
+.lct-gallery-section {
+  min-height: 0 !important;
+  padding-bottom: 0 !important;
 }
 
 /* Photoswipe */
