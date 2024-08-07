@@ -43,13 +43,13 @@ const LCT_Theme = (function(){
 
         if (entry.isIntersecting) {
 
-          introSection.querySelector('.lct-swap').classList.add('lct-active');
+          sbsImage.querySelector('.lct-swap').classList.add('lct-active');
         }
       });
     };
     
     let observer = new IntersectionObserver(callback, options);
-    observer.observe(introSection);
+    observer.observe(sbsImage);
   }
 
   return {
