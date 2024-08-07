@@ -100,7 +100,7 @@
       <?php if($image): 
         
           $img = wp_get_attachment_image(251, null, null, array(
-            'class' => 'lct-object-fit lct-swap',
+            'class' => 'lct-object-fit lct-swap position-absolute',
             'loading' => 'lazy'
           )); 
         ?>
