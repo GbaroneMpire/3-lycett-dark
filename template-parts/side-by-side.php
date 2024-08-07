@@ -9,6 +9,7 @@
     $callouts = $fields['callouts'];
     $info_links = $fields['info_links'];
     $image = $fields['image'];
+    $callout_columns = $fields['callout_columns'];
 ?>
 
 <section id="lct-side-by-side" class="lct-side-by-side lct-section">
@@ -25,31 +26,53 @@
           <div class="lct-side-by-side__content mb-5">
             <?= $fields['content'] ?>  
           </div>
-  
-          <?php if($callouts): ?>
+
+          <?php if($callout_columns): ?>
             <section class="lct-side-by-side__callout-items pt-4">
               <div class="row">
 
                 <?php 
-                  foreach ($callouts as $callout): 
-                      $callout = $callout['callout']['lct_icon_callout']; 
+
+                  foreach ($callout_columns as $col): 
+                      $title = $col['column_title'];
+                      $callouts = $col['callouts'];
                     ?>
 
-                      <div class="col-6 mb-5">
+                      <div class="col mb-5">
 
-                        <?php  get_template_part('template-parts/icon-callout', null, array(
-                          'fields' => $callout
-                        )); ?>
+                        <?php if($title): ?>
+                          <h4><?= $title; ?></h4>
+                        <?php endif; ?>
+                        
+                        <?php 
+                          foreach ($callouts as $callout): 
+                              $callout = $callout['callout']['lct_icon_callout']; 
+                            ?>
+
+                              <div class="col-6 mb-5">
+
+                                <?php  get_template_part('template-parts/icon-callout', null, array(
+                                  'fields' => $callout
+                                )); ?>
+
+                              </div> 
+                              
+                            <?php
+                          endforeach;
+                        ?>
 
                       </div> 
                       
                     <?php
                   endforeach;
+
                 ?>
 
               </div>
             </section>
           <?php endif; ?>
+
+  
   
           <?php if($info_links): ?>
             <section class="lct-side-by-side__info_links">
