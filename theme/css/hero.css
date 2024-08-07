@@ -121,6 +121,7 @@ body.home.lct-home-intro-done .lct-hero #intro-cover {
 
 body.home .lct-hero__logo {
   position: relative;
+  overflow: hidden;
   --logo-ease: .6s;
 }
 
@@ -132,9 +133,6 @@ body.home .lct-hero__logo:after {
   right: 0;
   bottom: 0;
   background: white;
-  transform: translateY(100%);
-  transition-delay: calc(var(--logo-ease) * .5);
-  transition: background .1s ease;
 }
 
 body.home .lct-hero__logo > svg {
