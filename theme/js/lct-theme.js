@@ -44,6 +44,8 @@ const LCT_Theme = (function(){
         if (entry.isIntersecting) {
 
           sbsImage.querySelector('.lct-swap').classList.add('lct-active');
+        } else {
+          sbsImage.querySelector('.lct-swap').classList.remove('lct-active');
         }
       });
     };
