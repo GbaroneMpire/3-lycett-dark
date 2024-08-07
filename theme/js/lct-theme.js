@@ -46,11 +46,13 @@ const LCT_Theme = (function(){
         if (entry.isIntersecting && count > 1) {
           sbsImage.innerHTML = JSON.parse(sbsNext);
 
+          count++;
+
         } else {
           count = 0;
         }
 
-        count++;
+      
 
         console.log(count);
       });
