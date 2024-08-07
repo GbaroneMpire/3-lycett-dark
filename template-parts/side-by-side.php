@@ -50,7 +50,7 @@
                                   $callout = $callout['callout']['lct_icon_callout']; 
                                 ?>
   
-                                  <div class="col-6 mb-5">
+                                  <div class="col-6 mb-3">
   
                                     <?php  get_template_part('template-parts/icon-callout', null, array(
                                       'fields' => $callout
