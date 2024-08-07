@@ -22,7 +22,7 @@ const LCT_Theme = (function(){
     window.addEventListener('DOMContentLoaded', afterLoad);
 
     window.onbeforeunload = function () {
-      history.scrollRestoration = "manual";
+      history.replaceState(null, null, ' ');
       window.scrollTo(0, 0);
     }
   }
