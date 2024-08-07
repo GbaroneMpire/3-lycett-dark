@@ -2,15 +2,22 @@
 
 const LCT_Theme = (function(){
 
+  let canPlay = false;
+
   const body = document.querySelector('body');
 
   const vid = document.querySelector(".wp-video-shortcode");
   vid.oncanplay = function() {
-    body.classList.add('lct-home-intro-done')
+    canPlay = true;
   };
 
   function afterLoad(){
     body.classList.add('lct-loaded');
+
+    setTimeout(() => {
+      if (canPlay) body.classList.add('lct-home-intro-done');
+    }, 1000);
+  
   }
 
   function init(){
