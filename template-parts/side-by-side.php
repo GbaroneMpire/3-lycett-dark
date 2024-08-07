@@ -6,7 +6,6 @@
 
 <?php 
     extract($args);
-    $callouts = $fields['callouts'];
     $info_links = $fields['info_links'];
     $image = $fields['image'];
     $callout_columns = $fields['callout_columns'];
@@ -29,8 +28,7 @@
 
           <?php if($callout_columns): ?>
             <section class="lct-side-by-side__callout-items pt-4">
-              <div class="row">
-
+    
                 <?php 
 
                   foreach ($callout_columns as $col): 
@@ -38,7 +36,7 @@
                       $callouts = $col['callouts'];
                     ?>
 
-                      <div class="col mb-5">
+                      <div class="lct-callout-column mb-5">
 
                         <?php if($title): ?>
                           <h4><?= $title; ?></h4>
@@ -68,7 +66,6 @@
 
                 ?>
 
-              </div>
             </section>
           <?php endif; ?>
 
