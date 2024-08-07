@@ -6,18 +6,11 @@ const LCT_Theme = (function(){
 
   const vid = document.querySelector(".wp-video-shortcode");
   vid.oncanplay = function() {
-    console.log('canplay');
+    body.classList.add('lct-home-intro-done')
   };
 
   function afterLoad(){
     body.classList.add('lct-loaded');
-
-    setTimeout(()=> {
-      body.classList.add('lct-home-intro-done')
-    }, 1000);
-
-    console.log('load');
-
   }
 
   function init(){
