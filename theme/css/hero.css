@@ -142,3 +142,7 @@ body.home .lct-hero__logo > svg {
 body.home.lct-loaded .lct-hero__logo > svg {
   transform: translateY(0);
 }
+
+body.home.lct-loaded .lct-hero__logo:after {
+  background: none;
+}
