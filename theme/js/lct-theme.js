@@ -42,11 +42,15 @@ const LCT_Theme = (function(){
       entries.forEach((entry) => {
 
         if (entry.isIntersecting) {
-          sbsImage.innerHTML = JSON.parse(sbsNext);
 
-          sbsImage.querySelector('.lct-swap').classList.add('lct-active');
+          const img = JSON.parse(sbsNext);
 
-          console.log('test');
+
+          // sbsImage.innerHTML = img;
+
+          // sbsImage.querySelector('.lct-swap').classList.add('lct-active');
+
+          console.log(img);
         }
       });
     };
