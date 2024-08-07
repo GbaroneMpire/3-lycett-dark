@@ -144,6 +144,9 @@ function b4st_post_date()
 	}
 }
 
+add_filter( 'wp_video_shortcode', function( $html ) {
+	return str_replace( '<video', '<video muted playsinline autoplay loop ', $html );
+} );
 
 /*------------------------------------*\
 	ACTIONS
