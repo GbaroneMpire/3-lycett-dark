@@ -34,27 +34,18 @@ const LCT_Theme = (function(){
 
     let options = {
       root: document.querySelector("#scrollArea"),
-      rootMargin: "0px",
+      rootMargin: "200px 0px 0px",
       threshold: [.15, .2]
     };
-
-    let count = 0;
 
     let callback = (entries, observer) => {
       entries.forEach((entry) => {
 
-        if (entry.isIntersecting && count > 1) {
+        if (entry.isIntersecting) {
           sbsImage.innerHTML = JSON.parse(sbsNext);
 
-  
-
-        } else {
-          count = 0;
+          console.log('test');
         }
-
-              count++;
-
-        console.log(count);
       });
     };
     
