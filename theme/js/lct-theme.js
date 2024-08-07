@@ -22,9 +22,10 @@ const LCT_Theme = (function(){
     window.addEventListener('DOMContentLoaded', afterLoad);
 
     window.onbeforeunload = function () {
-      history.replaceState(null, null, ' ');
       window.scrollTo(0, 0);
     }
+
+    history.replaceState(null, null, ' ');
   }
 
   return {
