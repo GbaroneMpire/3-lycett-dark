@@ -50,7 +50,7 @@ const LCT_Theme = (function(){
 
           // sbsImage.querySelector('.lct-swap').classList.add('lct-active');
 
-          console.log(img);
+          console.log(img.classList);
         }
       });
     };
