@@ -43,11 +43,7 @@ const LCT_Theme = (function(){
 
         if (entry.isIntersecting) {
 
-          const img = JSON.parse(sbsNext);
-
-          sbsImage.innerHTML += img;
-
-          sbsImage.querySelector('.lct-swap').classList.add('lct-active');
+          introSection.querySelector('.lct-swap').classList.add('lct-active');
         }
       });
     };
