@@ -30,8 +30,8 @@
 
 .lct-swap {
   opacity: 0;
+  left: 0;
   transition: opacity 1s ease;
-  transition-delay: .5s;
 }
 
 .lct-swap.lct-active {
