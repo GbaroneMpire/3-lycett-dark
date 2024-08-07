@@ -28,6 +28,16 @@
   margin: 0;
 }
 
+.lct-swap {
+  opacity: 0;
+  transition: opacity 1s ease;
+  transition-delay: .5s;
+}
+
+.lct-swap.lct-active {
+  opacity: 1;
+}
+
 @media (min-width: 769px) {
   body.home .lct-side-by-side__image {
     position: -webkit-sticky;
