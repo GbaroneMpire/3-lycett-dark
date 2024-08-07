@@ -106,9 +106,9 @@
         ?>
 
     
-        <section class="col-md-6 position-relative p-0" data-lct-img="<?php json_encode($img) ?>">
+        <section class="col-md-6 position-relative p-0">
           
-          <div class="lct-side-by-side__image">
+          <div class="lct-side-by-side__image" data-lct-img="<?php json_encode($img) ?>">
             <?= $img; ?>
           </div>
 
