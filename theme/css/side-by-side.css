@@ -31,11 +31,13 @@
 .lct-swap {
   opacity: 0;
   left: 0;
-  transition: opacity 4s ease;
+  transition: opacity 3s ease;
+  transition-delay: 0s;
 }
 
 .lct-swap.lct-active {
   opacity: 1;
+  transition-delay: .5s;
 }
 
 @media (min-width: 769px) {
