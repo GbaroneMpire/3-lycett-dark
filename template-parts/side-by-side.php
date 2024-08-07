@@ -36,7 +36,7 @@
                       $callouts = $col['callouts'];
                     ?>
 
-                      <div class="lct-callout-column mb-5">
+                      <div class="lct-callout-column mb-5 py-5">
 
                         <?php if($title): ?>
                           <h4><?= $title; ?></h4>
