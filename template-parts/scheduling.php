@@ -11,7 +11,7 @@
   $bg = $fields['background_image'];
 ?>
 
-<div id="lct-scheduling-section" class="lct-scheduling lct-section pt-5 pb-0">
+<div id="lct-scheduling-section" class="lct-scheduling lct-section pt-5 pb-0 position-relative">
     <?php if($bg): ?>
       <div class="lct-scheduling-section__background lct-background-cover">
         <?= wp_get_attachment_image($bg['ID'], 'lct-hero', false, array(
