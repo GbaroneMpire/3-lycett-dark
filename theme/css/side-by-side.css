@@ -4,25 +4,17 @@
 
 .lct-callout__icon {
   font-size: 3em;
+  padding: 0 .25em;
 }
 
 .lct-callout__main-text {
-  font-size: 120%;
+  font-size: 90%;
+  line-height: 1.5;
   color: var(--lct-color-heading);
 }
 
 .lct-side-by-side__image {
   aspect-ratio: 1 / 1;
-}
-
-.lct-side-by-side .lct-callout__main-text {
-  font-size: 90%;
-  line-height: 1.5;
-}
-
-.lct-side-by-side .lct-callout__icon {
-  font-size: 3rem;
-  padding: 0 .25em;
 }
 
 @media (min-width: 769px) {

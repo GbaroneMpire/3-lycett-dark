@@ -10,7 +10,7 @@
   <style>
     :root {
       --lct-header-height: 80px;
-      --lct-section-padding: 2%;
+      --lct-section-padding: max(5%, 40px);
       --lct-background-color: #222222;
       --lct-html-scale: 62.5%;
       --lct-font-family: 'Century Gothic', sans-serif;
