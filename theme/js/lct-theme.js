@@ -38,12 +38,19 @@ const LCT_Theme = (function(){
       threshold: [.15, .2]
     };
 
+    let count;
+
     let callback = (entries, observer) => {
       entries.forEach((entry) => {
 
-        if (entry.isIntersecting) {
+        if (entry.isIntersecting && count > 1) {
           sbsImage.innerHTML = JSON.parse(sbsNext);
+
+        } else {
+          count = 0;
         }
+
+        count++;
       });
     };
     
