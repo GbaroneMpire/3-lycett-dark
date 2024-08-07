@@ -330,7 +330,7 @@ body.home .lct-callouts {
     stroke: var(--lct-color-light-text);
   }
 
-  body.home #navbar {
+  body.home #navbar a{
     color: black;
     font-size: 2rem;
     padding-bottom: 1em;
