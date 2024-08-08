@@ -85,13 +85,13 @@
                       <?php 
                         if($buttons): 
                       
-                          foreach ($buttons as $button): 
+                          foreach ($buttons as $button_row): 
                       
-                              $button = $button['button'];
+                              $button = $button_row['button'];
                               $link_target = $button['target'] ? $button['target'] : '_self';
-                              //$is_modal = $button['is_modal'];
+                              $is_modal = $button_row['is_modal'];
 
-                              lct_test($button);
+                              echo $is_modal;
                             ?>
 
                               <a href="<?= esc_url($button['url']) ?>" target="<?= esc_attr($link_target) ?>" class="lct-button" <?= ($is_modal) ? 'data-toggle="modal"': ''; ?>><?= esc_html($button['title']) ?></a>
