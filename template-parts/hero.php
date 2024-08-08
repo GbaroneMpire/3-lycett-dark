@@ -97,11 +97,11 @@
                               <a href="<?= esc_url($button['url']) ?>" target="<?= esc_attr($link_target) ?>" class="lct-button" <?= ($is_modal) ? 'data-toggle="modal"': ''; ?>><?= esc_html($button['title']) ?></a>
                               
                               
-                              <?php if($is_modal): ?>
-                                <div id="<?= str_replace($button['url'], '#', ''); ?>" class="modal fade">
-                                  <?= $button_row['modal_content']; ?>
-                                </div>
-                              <?php endif; ?>
+                                <?php if($is_modal): ?>
+                                  <div id="<?= str_replace('#', '', $button['url']); ?>" class="modal fade">
+                                    <?= $button_row['modal_content']; ?>
+                                  </div>
+                                <?php endif; ?>
                               
                               <?php
 
