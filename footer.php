@@ -33,9 +33,15 @@
 
 <?php 
 
-  $button_rows = get_field('lct_index_sections');
+  $layout_sections = get_field('lct_index_sections');
 
-  lct_test($button_rows);
+  foreach ($layout_sections as $section):
+
+    $hero = $section['hero']['lct_hero'];
+
+    lct_test($hero);
+
+  endforeach;
 
   
     /*
