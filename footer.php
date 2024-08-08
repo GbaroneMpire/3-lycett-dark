@@ -33,7 +33,7 @@
 
 <?php 
 
-  $button_rows = get_field('lct_index_sections')['lct_hero']['buttons'];
+  $button_rows = get_field('lct_index_sections')
 
   lct_test($button_rows);
 
