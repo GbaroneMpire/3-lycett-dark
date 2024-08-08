@@ -238,6 +238,17 @@ body.home .lct-callouts {
 .calendly-spinner > div {
   background: var(--lct-color-dark-text) !important;
 }
+/* 
+MODAL STYLES */
+.modal, .modal-title {
+  color: var(--lct-color-light-text);
+}
+
+.modal-body {
+  max-width: 660px;
+  margin: 0 auto;
+  font-size: 1.4rem;
+}
 
 @media (min-width: 600px) {
   html {
