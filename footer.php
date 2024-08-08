@@ -37,9 +37,9 @@
 
   foreach ($layout_sections as $section):
 
+    $layout = $section['acf_fc_layout'];
 
-
-    lct_test($section);
+    lct_test($layout);
 
 
   endforeach;
