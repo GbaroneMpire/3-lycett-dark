@@ -37,13 +37,9 @@
 
   foreach ($layout_sections as $section):
 
-    $hero = $section['hero'];
 
-    if ($hero): 
 
-      lct_test($hero);
-
-    endif;
+    lct_test($section);
 
 
   endforeach;
