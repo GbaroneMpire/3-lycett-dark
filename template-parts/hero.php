@@ -91,7 +91,7 @@
                               $link_target = $button['target'] ? $button['target'] : '_self';
                               //$is_modal = $button['is_modal'];
 
-                              lct_test($button);
+                              lct_test($button['button']);
                             ?>
 
                               <a href="<?= esc_url($button['url']) ?>" target="<?= esc_attr($link_target) ?>" class="lct-button" <?= ($is_modal) ? 'data-toggle="modal"': ''; ?>><?= esc_html($button['title']) ?></a>
