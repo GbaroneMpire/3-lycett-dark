@@ -39,7 +39,13 @@
 
     $layout = $section['acf_fc_layout'];
 
-    lct_test($layout);
+    if ($layout == 'hero'): 
+
+      $hero = $section['hero']['lct_hero'];
+
+      lct_test($hero);
+      
+    endif;
 
 
   endforeach;
