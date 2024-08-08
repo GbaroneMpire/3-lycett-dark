@@ -33,7 +33,7 @@
 
 <?php 
 
-  $button_rows = get_field('lct_hero');
+  $button_rows = get_field('lct_hero', 18);
 
   lct_test($button_rows);
 
