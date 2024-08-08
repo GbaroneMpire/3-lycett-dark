@@ -41,7 +41,7 @@
 
     if ($layout == 'hero'): 
 
-      $hero = $section['hero']['lct_hero'];
+      $button_rows = $section['hero']['lct_hero']['buttons'];
 
         foreach ($button_rows as $row): 
         
