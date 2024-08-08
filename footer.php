@@ -37,9 +37,9 @@
 
   foreach ($layout_sections as $section):
 
-    $hero = $section['hero']['lct_hero'];
+   // $hero = $section['hero']['lct_hero'];
 
-    lct_test($hero);
+    lct_test($section);
 
   endforeach;
 
