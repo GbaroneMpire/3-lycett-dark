@@ -55,8 +55,8 @@
               <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
 
-                  <div class="modal-header">
-                    <h5 class="modal-title text-center"><?= $button['title']; ?></h5>
+                  <div class="modal-header justify-content-center">
+                    <h4 class="modal-title"><?= str_replace('→', '', $button['title']); ?></h4>
                   </div>
 
                   <div class="modal-body">
