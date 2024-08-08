@@ -99,7 +99,7 @@
                               
                               <?php if($is_modal): ?>
                                 <div id="<?= str_replace($button['url'], '#', ''); ?>">
-                                  <?= $button['modal_content']; ?>
+                                  <?= $button_row['modal_content']; ?>
                                 </div>
                               <?php endif; ?>
                               
