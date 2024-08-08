@@ -94,34 +94,8 @@
                             ?>
 
                               <a href="<?= esc_url($button['url']) ?>" target="<?= esc_attr($link_target) ?>" class="lct-button" <?= ($is_modal) ? 'data-toggle="modal"': ''; ?>><?= esc_html($button['title']) ?></a>
-                              
-                              
-                                <?php if($is_modal): ?>
-                                  <div id="<?= str_replace('#', '', $button['url']); ?>" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="<?= str_replace('#', '', $button['url']); ?>" aria-hidden="true">
-                                    <div class="modal-dialog" role="document">
-                                      <div class="modal-content">
 
-                                        <div class="modal-header">
-                                          <h5 class="modal-title"><?= str_replace('#', '', $button['url']); ?></h5>
-                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                          </button>
-                                        </div>
-
-                                        <div class="modal-body">
-                                          <?= $button_row['modal_content']; ?>
-                                        </div>
-
-                                        <div class="modal-footer">
-                                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                        </div>
-
-                                      </div>
-                                    </div>
-                                  </div>
-                                <?php endif; ?>
-                              
-                              <?php
+                            <?php
 
                           endforeach;
                         endif; 

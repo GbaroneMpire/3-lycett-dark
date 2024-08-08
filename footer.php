@@ -31,7 +31,45 @@
 
 <?php wp_footer(); ?>
 
-<?php // get_template_part('template-parts/intro'); ?>
+<?php 
+
+  $button_rows = get_field('lct_hero')['buttons'];
+
+  foreach ($button_rows as $row): 
+  
+    $button = $row['button'];
+    $is_modal = $row['is_modal'];
+    $modal_content = $row['modal_content'];
+
+    if($is_modal): ?>
+                                  
+      <div id="<?= str_replace('#', '', $button['url']); ?>" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="<?= str_replace('#', '', $button['url']); ?>" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+
+            <div class="modal-header">
+              <h5 class="modal-title"><?= str_replace('#', '', $button['url']); ?></h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+
+            <div class="modal-body">
+              <?= $modal_content; ?>
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+
+          </div>
+        </div>
+      </div> <?php 
+    
+    endif; 
+  
+  endforeach;
+?>
 
 </body>
 </html>
