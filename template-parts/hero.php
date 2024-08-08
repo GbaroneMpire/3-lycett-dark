@@ -89,9 +89,19 @@
                       
                               $button = $button['button'];
                               $link_target = $button['target'] ? $button['target'] : '_self';
+                              $is_modal = $button['is_modal'];
                             ?>
 
-                              <a href="<?= esc_url($button['url']) ?>" target="<?= esc_attr($link_target) ?>" class="lct-button"><?= esc_html($button['title']) ?></a><?php
+                              <a href="<?= esc_url($button['url']) ?>" target="<?= esc_attr($link_target) ?>" class="lct-button" <?= ($is_modal) ? 'data-toggle="modal"': ''; ?>><?= esc_html($button['title']) ?></a>
+                              
+                              
+                              <?php if($is_modal): ?>
+                                <div id="<?= str_replace($button['url'], '#', ''); ?>">
+                                  <?= $button['modal_content']; ?>
+                                </div>
+                              <?php endif; ?>
+                              
+                              <?php
 
                           endforeach;
                         endif; 
