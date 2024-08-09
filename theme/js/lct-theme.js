@@ -13,7 +13,12 @@ const LCT_Theme = (function(){
 
     const vid = document.querySelector(".wp-video-shortcode");
     vid.oncanplay = function() {   
-      setTimeout(()=> body.classList.add('lct-home-intro-done'), 1000);
+
+        console.log('canplay');
+      setTimeout(()=> {
+        console.log('end intro');
+        body.classList.add('lct-home-intro-done');
+      }, 1000);
     };
   }
 
