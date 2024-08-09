@@ -15,6 +15,7 @@
   width: 100%;
   position: relative;
   z-index: 20;
+  transform: translateY(.25em);
 }
 
 /* body.home .lct-hero__logo {
@@ -70,7 +71,8 @@ body.home.lct-loaded .lct-hero__logo, body.home.no-js {
 }
 
 body.home.lct-home-intro-done .loader-line {
-  display: none !important;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .lct-hero__logo path, .lct-hero__logo polygon, .lct-hero__logo line {
