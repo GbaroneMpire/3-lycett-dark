@@ -2,25 +2,19 @@
 
 const LCT_Theme = (function(){
 
-  let canPlay = false;
-
   const body = document.querySelector('body'),
         introSection = document.querySelector('#lct-side-by-side'),
         sbsImage = document.querySelector('.lct-side-by-side__image'),
         sbsNext = sbsImage.getAttribute('data-lct-img');
 
-  const vid = document.querySelector(".wp-video-shortcode");
-  vid.oncanplay = function() {
-    canPlay = true;
-  };
 
   function afterLoad(){
     body.classList.add('lct-loaded');
 
-    setTimeout(() => {
-      body.classList.add('lct-home-intro-done');
-    }, 1000);
-  
+    const vid = document.querySelector(".wp-video-shortcode");
+    vid.oncanplay = function() {   
+      setTimeout(()=> body.classList.add('lct-home-intro-done'), 1000);
+    };
   }
 
   function init(){
