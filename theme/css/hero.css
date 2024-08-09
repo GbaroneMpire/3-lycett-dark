@@ -38,6 +38,7 @@ body.home.lct-loaded .lct-hero__logo, body.home.no-js {
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   border-radius: 20px;
+  z-index: 10;
 }
 
 .loader-line:before {
