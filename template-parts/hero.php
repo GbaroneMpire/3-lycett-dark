@@ -66,11 +66,12 @@
                     <?php if ($show_logo): ?>
                         <div class="lct-hero__logo">
                           <?= get_template_part('/template-parts/logo', 'square'); ?>
+
+                          <?php if(is_front_page()): ?>
+                            <div class="loader-line"></div>
+                          <?php endif; ?>
                         </div> 
 
-                        <?php if(is_front_page()): ?>
-                          <div class="loader-line"></div>
-                        <?php endif; ?>
                     <?php endif; ?>
 
                     <?php if($subtext): ?>
