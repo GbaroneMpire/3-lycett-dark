@@ -15,6 +15,7 @@
       --lct-html-scale: 62.5%;
       --lct-font-family: 'Century Gothic', sans-serif;
       --lct-font-size-body: 1.6rem;
+      --lct-color-accent: #1472ba;
       --lct-button-background: #FFFFFF;
       --lct-button-text: #000000;
       --lct-color-heading: #FFFFFF;
