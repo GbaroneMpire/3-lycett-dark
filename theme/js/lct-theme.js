@@ -6,7 +6,7 @@ const LCT_Theme = (function(){
         introSection = document.querySelector('#lct-side-by-side'),
         sbsImage = document.querySelector('.lct-side-by-side__image'),
         sbsNext = sbsImage.getAttribute('data-lct-img'),
-        watchVideoButton = documnet.querySelector('.lct-watch-video');
+        watchVideoButton = document.querySelector('.lct-watch-video');
 
   function afterLoad(){
 
