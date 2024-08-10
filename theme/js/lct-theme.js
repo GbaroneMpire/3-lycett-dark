@@ -7,19 +7,27 @@ const LCT_Theme = (function(){
         sbsImage = document.querySelector('.lct-side-by-side__image'),
         sbsNext = sbsImage.getAttribute('data-lct-img');
 
-
   function afterLoad(){
-    body.classList.add('lct-loaded');
 
     const vid = document.querySelector(".wp-video-shortcode");
-    vid.oncanplay = function() {   
 
-        console.log('canplay');
+    body.classList.add('lct-loaded');
+
+    function endIntro(){
       setTimeout(()=> {
-        console.log('end intro');
+        console.log('intro done');
         body.classList.add('lct-home-intro-done');
       }, 1000);
-    };
+    }
+
+    if (vid) {
+      vid.oncanplay = function(){
+        console.log('canplay')
+        endIntro();
+      };
+    } else {
+      endIntro();
+    }
   }
 
   function init(){
