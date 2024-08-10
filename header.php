@@ -26,7 +26,12 @@
       --lct-color-dark-text: #FFFFFF;
       --lct-color-light-text: #222222;
 
-    }
+      --lct-gap-1: .5em;
+      --lct-gap-2: .75em;
+      --lct-gap-3: 1em;
+
+      --lct-transition-ease: cubic-bezier(0.33, 1, 0.68, 1);
+      --lct-transition-timing-long: 1s;
 
   </style>
 </head>
