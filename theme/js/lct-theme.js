@@ -15,14 +15,12 @@ const LCT_Theme = (function(){
 
     function endIntro(){
       setTimeout(()=> {
-        console.log('intro done');
         body.classList.add('lct-home-intro-done');
       }, 1000);
     }
 
     if (vid) {
       vid.oncanplay = function(){
-        console.log('canplay')
         endIntro();
       };
     } else {
