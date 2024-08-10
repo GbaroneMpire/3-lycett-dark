@@ -5,7 +5,8 @@ const LCT_Theme = (function(){
   const body = document.querySelector('body'),
         introSection = document.querySelector('#lct-side-by-side'),
         sbsImage = document.querySelector('.lct-side-by-side__image'),
-        sbsNext = sbsImage.getAttribute('data-lct-img');
+        sbsNext = sbsImage.getAttribute('data-lct-img'),
+        watchVideoButton = documnet.querySelector('.lct-watch-video');
 
   function afterLoad(){
 
@@ -28,15 +29,7 @@ const LCT_Theme = (function(){
     }
   }
 
-  function init(){
-    window.addEventListener('DOMContentLoaded', afterLoad);
-
-    window.onbeforeunload = function () {
-      window.scrollTo(0, 0);
-    }
-
-    history.replaceState(null, null, ' ');
-
+  function observeImage() {
     let options = {
       root: document.querySelector("#scrollArea"),
       rootMargin: "0px",
@@ -57,6 +50,34 @@ const LCT_Theme = (function(){
     
     let observer = new IntersectionObserver(callback, options);
     observer.observe(sbsImage);
+  }
+
+  function resetScroll() {
+    window.onbeforeunload = function () {
+      window.scrollTo(0, 0);
+    }
+
+    history.replaceState(null, null, ' ');
+  }
+
+
+  function init(){  
+
+    window.addEventListener('DOMContentLoaded', afterLoad);
+
+    watchVideoButton.addEventListener('click', () => {
+      body.classList.remove('lct-home-intro-done');
+
+      setTimeout(()=>{
+        body.classList.add('lct-watch-video');
+      }, 300);
+      
+    });
+
+    observeImage();
+
+    resetScroll();
+  
   }
 
   return {

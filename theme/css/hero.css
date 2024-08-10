@@ -18,17 +18,6 @@
   transform: translateY(.25em);
 }
 
-/* body.home .lct-hero__logo {
-  opacity: 0;
-  -webkit-transition: .5s ease-out;
-  -o-transition: .5s ease-out;
-  transition: .5s ease-out;
-}
-
-body.home.lct-loaded .lct-hero__logo, body.home.no-js {
-  opacity: 1;
-} */
-
 .loader-line {
   width: 100%;
   height: 3px;
@@ -119,6 +108,11 @@ body.home:not(.lct-home-intro-done) .lct-hero {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  visibility: visible;
+}
+
+body.lct-watch-video .lct-hero__text-container {
+  visibility: hidden;
 }
 
 .lct-hero .wp-video, .mejs-container, video {
@@ -144,6 +138,25 @@ body.home:not(.lct-home-intro-done) .lct-hero {
 .lct-hero .wp-video video {
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+body.home.lct-watch-video .lct-hero .wp-video video {
+  object-fit: fill !important;
+}
+
+body.home.lct-watch-video .lct-hero .wp-video,
+body.home.lct-watch-video .mejs-container,
+body.home.lct-watch-video video {
+  pointer-events: auto !important;
+}
+
+body.home.lct-watch-video video {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+body.home.lct-watch-video .mejs-controls > *:not(.mejs-volume-button) {
+  opacity: 1 !important;
 }
 
 #intro-cover {
