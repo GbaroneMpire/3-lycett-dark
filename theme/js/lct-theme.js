@@ -30,6 +30,9 @@ const LCT_Theme = (function(){
   }
 
   function observeImage() {
+
+    if (!sbsImage) return;
+
     let options = {
       root: document.querySelector("#scrollArea"),
       rootMargin: "0px",
@@ -60,10 +63,9 @@ const LCT_Theme = (function(){
     history.replaceState(null, null, ' ');
   }
 
+  function watchVideo() {
 
-  function init(){  
-
-    window.addEventListener('DOMContentLoaded', afterLoad);
+    if (!watchVideoButton) return;
 
     watchVideoButton.addEventListener('click', () => {
       body.classList.remove('lct-home-intro-done');
@@ -73,6 +75,14 @@ const LCT_Theme = (function(){
       }, 300);
       
     });
+  }
+
+
+  function init(){  
+
+    window.addEventListener('DOMContentLoaded', afterLoad);
+
+    watchVideo();
 
     observeImage();
 
