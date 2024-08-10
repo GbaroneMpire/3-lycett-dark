@@ -40,7 +40,7 @@
 
                 <div class="lct-highlights__slide">
 
-                  <div class="lct-inner position-relative d-flex flex-column justify-content-end">
+                  <div class="lct-inner position-relative d-flex flex-column">
 
                     <div class="lct-highlight-slide__background lct-background-cover">
                       <?= wp_get_attachment_image($slide['background_image']['ID'], null, null, array(
