@@ -71,14 +71,11 @@ const LCT_Theme = (function($){
 
     resetScroll();
 
-    console.log($('#lct-watch-video'));
-
-    $('#lct-watch-video').on('hidden.bs.modal', function (e) {
-      console.log(e.relatedTarget);
-    });
-
+    // jQuery Stuff
     $(function() {
-      console.log( "ready!" );
+      $('#lct-watch-video').on('hidden.bs.modal', function (e) {
+        console.log(e.relatedTarget);
+      });
     });
 
   }
