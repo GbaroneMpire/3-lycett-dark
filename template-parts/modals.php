@@ -1,6 +1,6 @@
 <?php
 
-  $modals = get_field('lct_modals');
+  $modals = get_field('lct_modals', 'option');
 
   foreach($modals as $modal): 
 
