@@ -21,9 +21,7 @@ function lct_get_image_data($image_id) {
 function lct_modal_attribute( $atts, $item, $args )
 {
 
-  if (in_array('lct-modal', $atts['class'])) {
-    $atts['data-toggle'] = 'modal';
-  }
+  $atts['class'] = "lct-test";
   return $atts;
 }
 
