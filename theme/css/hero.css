@@ -115,7 +115,7 @@ body.lct-watch-video .lct-hero__text-container {
   visibility: hidden;
 }
 
-.lct-hero .wp-video, .mejs-container, video {
+.lct-hero .wp-video, .mejs-container {
   width: 100% !important;
   height: 100% !important;
   pointer-events: none;
