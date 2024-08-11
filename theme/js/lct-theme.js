@@ -63,30 +63,17 @@ const LCT_Theme = (function(){
     history.replaceState(null, null, ' ');
   }
 
-  function watchVideo() {
-
-    if (!watchVideoButton) return;
-
-    watchVideoButton.addEventListener('click', () => {
-      body.classList.remove('lct-home-intro-done');
-
-      setTimeout(()=>{
-        body.classList.add('lct-watch-video');
-      }, 300);
-      
-    });
-  }
-
-
   function init(){  
 
     window.addEventListener('DOMContentLoaded', afterLoad);
 
-    watchVideo();
-
     observeImage();
 
     resetScroll();
+
+    $('#lct-watch-video__video').on('hide.bs.modal', function (e) {
+      console.log(e);
+    })
   
   }
 
