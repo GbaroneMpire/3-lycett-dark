@@ -8,21 +8,20 @@
     ?>
 
           <div id="<?= $modal['id']; ?>" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="<?= $modal['id']; ?>">
-              <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
                 <div class="modal-content">
 
-                  <?php if($modal_title): ?> 
-                    <div class="modal-header justify-content-center">
+                  <div class="modal-header justify-content-center">
+                    <?php if($modal_title): ?> 
                       <h4 class="modal-title"><?= $modal_title; ?></h4>
-                    </div>
-                  <?php endif; ?>
+                    <?php endif; ?>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true"><i class="fa-sharp fa-thin fa-xmark"></i></span>
+                    </button>
+                  </div>
 
                   <div class="modal-body">
                     <?= $modal['content']; ?>
-                  </div>
-
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                   </div>
 
                 </div>
