@@ -16,3 +16,19 @@ function lct_get_image_data($image_id) {
     'description' => $image_data->post_content
   );
 }
+
+
+function lct_modal_attribute( $atts, $item, $args )
+{
+
+  if (in_array('lct-modal-item', $item->classes)) {
+    $atts['data-toggle'] = 'modal';
+  }
+  return $atts;
+}
+
+add_filter( 'nav_menu_link_attributes', 'lct_modal_attribute', 10, 3 );
+
+
+
+
