@@ -115,22 +115,24 @@ body.lct-watch-video .lct-hero__text-container {
   visibility: hidden;
 }
 
-.lct-hero .wp-video, .mejs-container {
+.lct-hero .wp-video, 
+.lct-hero .mejs-container,
+.lct-hero .wp-video video {
   width: 100% !important;
   height: 100% !important;
   pointer-events: none;
 }
 
-.mejs-controls {
+.lct-hero .mejs-controls {
   opacity: 1 !important;
   background: transparent !important;
 }
 
-.mejs-controls > *:not(.mejs-volume-button) {
+.lct-hero .mejs-controls > *:not(.mejs-volume-button) {
   opacity: 0;
 }
 
-.mejs-volume-button {
+.lct-hero .mejs-volume-button {
   opacity: 1 !important;
   pointer-events: auto !important;
 }
@@ -145,17 +147,17 @@ body.home.lct-watch-video .lct-hero .wp-video video {
 }
 
 body.home.lct-watch-video .lct-hero .wp-video,
-body.home.lct-watch-video .mejs-container,
-body.home.lct-watch-video video {
+body.home.lct-watch-video .lct-hero .mejs-container,
+body.home.lct-watch-video .lct-hero .wp-video video {
   pointer-events: auto !important;
 }
 
-body.home.lct-watch-video video {
+body.home.lct-watch-video .wp-video video {
   max-width: 1100px;
   margin: 0 auto;
 }
 
-body.home.lct-watch-video .mejs-controls > *:not(.mejs-volume-button) {
+body.home.lct-watch-video .lct-hero .mejs-controls > *:not(.mejs-volume-button) {
   opacity: 1 !important;
 }
 
