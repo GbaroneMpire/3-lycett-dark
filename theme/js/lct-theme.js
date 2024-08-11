@@ -71,7 +71,7 @@ const LCT_Theme = (function(){
 
     resetScroll();
 
-    $('#lct-watch-video__video').on('hide.bs.modal', function (e) {
+    document.querySelector('#lct-watch-video__video').addEventListener('hide.bs.modal', function (e) {
       console.log(e);
     })
   
