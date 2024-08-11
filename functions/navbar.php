@@ -40,6 +40,7 @@ class b4st_walker_nav_menu extends Walker_Nav_menu {
 		$attributes .= ! empty( $item->target ) ? ' target="' . esc_attr($item->target) . '"' : '';
 		$attributes .= ! empty( $item->xfn ) ? ' rel="' . esc_attr($item->xfn) . '"' : '';
 		$attributes .= ! empty( $item->url ) ? ' href="' . esc_attr($item->url) . '"' : '';
+		$attributes .= ( in_array('lct-modal', $item->classes) ) ? 'data-toggle="modal"' : '';
 
 		$attributes .= ( $args->walker->has_children ) ? ' class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"' : ' class="nav-link"';
 
