@@ -1,6 +1,6 @@
-'use strict';
+const LCT_Theme = (function($){
 
-const LCT_Theme = (function(){
+  'use strict';
 
   const body = document.querySelector('body'),
         introSection = document.querySelector('#lct-side-by-side'),
@@ -71,16 +71,16 @@ const LCT_Theme = (function(){
 
     resetScroll();
 
-    document.querySelector('#lct-watch-video').addEventListener('hide.bs.modal', function (e) {
+    $('#lct-watch-video').on('hide.bs.modal', function (e) {
       console.log(e);
     })
-  
+
   }
 
   return {
     init: init
   }
 
-})();
+})(jQuery);
 
 LCT_Theme.init();
