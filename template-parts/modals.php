@@ -9,9 +9,9 @@
 
           <div id="<?= $modal['id']; ?>" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="<?= $modal['id']; ?>">
               <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
-                <div class="modal-content">
+                <div class="modal-content px-5 py-5">
 
-                  <div class="modal-header justify-content-center">
+                  <div class="modal-header justify-content-center border-0">
                     <?php if($modal_title): ?> 
                       <h4 class="modal-title"><?= $modal_title; ?></h4>
                     <?php endif; ?>

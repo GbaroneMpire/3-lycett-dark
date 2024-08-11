@@ -259,6 +259,15 @@ MODAL STYLES */
   aspect-ratio: 16 / 9;
 }
 
+#lct-watch-video.modal .modal-content {
+  background-color: var(--lct-background-color);
+}
+
+#lct-watch-video.modal .modal-content i {
+  color: white;
+  font-size: 3rem;
+}
+
 @media (min-width: 600px) {
   html {
     font-size: calc(var(--lct-html-scale) * .9);
