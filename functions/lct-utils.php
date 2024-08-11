@@ -18,14 +18,15 @@ function lct_get_image_data($image_id) {
 }
 
 
-function lct_modal_attribute( $atts, $item, $args )
-{
-
-  $atts['class'] = "lct-test";
+function add_specific_menu_location_atts( $atts, $item, $args ) {
+  // check if the item is in the primary menu
+  if( $args->theme_location == 'navbar' ) {
+    // add the desired attributes:
+    $atts['class'] = 'lct-test';
+  }
   return $atts;
 }
-
-add_filter( 'nav_menu_link_attributes', 'lct_modal_attribute', 10, 3 );
+add_filter( 'nav_menu_link_attributes', 'add_specific_menu_location_atts', 10, 3 );
 
 
 
