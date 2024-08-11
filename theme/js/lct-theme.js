@@ -74,7 +74,7 @@ const LCT_Theme = (function($){
     console.log($('#lct-watch-video'));
 
     $('#lct-watch-video').on('hidden.bs.modal', function (e) {
-      console.log(e);
+      console.log(e.relatedTarget);
     })
 
   }
