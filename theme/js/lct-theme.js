@@ -76,7 +76,7 @@ const LCT_Theme = (function($){
       $('#lct-watch-video').on('hidden.bs.modal', function (e) {
          const video = this.querySelector('video');
 
-         video.pause;
+         video.load();
       });
     });
 
