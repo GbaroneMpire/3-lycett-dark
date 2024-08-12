@@ -14,13 +14,19 @@
     
     <div class="row pt-3">
 
+        <?php
+          $footer_message = get_field('lct_footer_message', 'option');
+        ?>
+
         <div class="col-lg">
           <p class="text-center text-lg-left">&copy; <a href="<?php echo home_url('/'); ?>"><?php bloginfo('name'); ?></a> <?php echo date('Y'); ?></p>
         </div>
 
-        <div class="col-lg">
-          <p class="text-center">Contact <strong>3lycett@gmail.com</strong> for further questions or general inquiries.</p>
-        </div>
+        <?php if ($footer_message); ?>
+          <div class="col-lg">
+            <p class="text-center"><?= $footer_message; ?></p>
+          </div>
+        <?php endif; ?>
 
         <div class="col-lg">
           <p class="text-center text-lg-right">Designed & Developed by <a href="https://mpirecreative.com"><span class="mpire-m">M</span>pire Creative</a></p>
