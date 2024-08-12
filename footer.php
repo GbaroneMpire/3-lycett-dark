@@ -24,7 +24,7 @@
 
         <?php if($footer_message): ?>
           <div class="col-lg">
-            <p class="text-center"><?= $footer_message; ?></p>
+            <?= $footer_message; ?>
           </div>
         <?php endif; ?>
 
