@@ -15,7 +15,11 @@
     <div class="row pt-3">
 
         <div class="col-sm">
-          <p class="text-center text-sm-left">&copy; <?php echo date('Y'); ?> <a href="<?php echo home_url('/'); ?>"><?php bloginfo('name'); ?></a></p>
+          <p class="text-center text-sm-left">&copy; <a href="<?php echo home_url('/'); ?>"><?php bloginfo('name'); ?></a> <?php echo date('Y'); ?></p>
+        </div>
+
+        <div class="col-sm">
+          <p class="text-center text-sm-left">Contact <strong>3lycett@gmail.com</strong> for further questions or general inquiries.</p>
         </div>
 
         <div class="col-sm">
