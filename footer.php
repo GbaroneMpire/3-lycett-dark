@@ -19,7 +19,7 @@
         </div>
 
         <div class="col-lg">
-          <p class="text-center">Contact <strong>3lycett@gmail.com</strong> for further questions or general inquiries.</p>
+          <p class="text-center">Contact <strong><a href="mailto:3lycett@gmail.com">3lycett@gmail.com</a></strong> for further questions or general inquiries.</p>
         </div>
 
         <div class="col-lg">
