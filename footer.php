@@ -22,7 +22,7 @@
           <p class="text-center text-lg-left">&copy; <a href="<?php echo home_url('/'); ?>"><?php bloginfo('name'); ?></a> <?php echo date('Y'); ?></p>
         </div>
 
-        <?php if ($footer_message); ?>
+        <?php if($footer_message): ?>
           <div class="col-lg">
             <p class="text-center"><?= $footer_message; ?></p>
           </div>
