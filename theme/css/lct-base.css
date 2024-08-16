@@ -280,8 +280,6 @@ MODAL STYLES */
   color: var(--lct-color-light-text);
   padding: 2em;
   border-radius: 10px;
-
-  var()
 }
 
 #gform_wrapper_2 .gform_footer {
@@ -292,10 +290,9 @@ MODAL STYLES */
   color: var(--lct-color-light-text);
 }
 
-.ginput_container_date input {
+#gform_wrapper_2 .ginput_container_date input {
   --gf-local-width: 100%;
 }
-
 
 @media (min-width: 600px) {
   html {
