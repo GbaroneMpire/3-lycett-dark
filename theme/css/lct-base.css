@@ -272,7 +272,7 @@ MODAL STYLES */
 
 #gform_wrapper_2 {
   --gf-form-gap-y: 27px;
-  --gf-color-primary: var(--lct-color-accent);
+  --gf-color-primary: var(--lct-color-accent) !important;
 
   max-width: 720px;
   margin: 0 auto;
