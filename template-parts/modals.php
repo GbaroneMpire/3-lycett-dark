@@ -6,7 +6,7 @@
 
       $modal_title = $modal['title'];
       $custom_styles = $modal['custom_styles'];
-
+      $size = $modal['modal_size'];
     ?>
 
       <?php if ($custom_styles): ?>
@@ -14,7 +14,7 @@
       <?php endif; ?>
 
       <div id="<?= $modal['id']; ?>" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="<?= $modal['id']; ?>">
-          <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+          <div class="modal-dialog <?= $size; ?> modal-dialog-centered" role="document">
             <div class="modal-content px-5 py-3">
 
               <div class="modal-header justify-content-center border-0">
