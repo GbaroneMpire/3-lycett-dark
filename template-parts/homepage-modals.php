@@ -15,8 +15,15 @@
           $button = $row['button'];
           $is_modal = $row['is_modal'];
           $modal_content = $row['modal_content'];
+          $styles = $row['custom_styles'];
 
           if($is_modal): ?>
+
+            <?php if($styles); ?>
+              <style>
+                <?= $styles; ?>
+              </style>
+            <?php endif; ?>
                                         
             <div id="<?= str_replace('#', '', $button['url']); ?>" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="<?= str_replace('#', '', $button['url']); ?>" aria-hidden="true">
               <div class="modal-dialog modal-lg" role="document">
