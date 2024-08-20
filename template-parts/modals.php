@@ -10,7 +10,7 @@
     ?>
 
       <?php if ($custom_styles): ?>
-        <?= $custom_styles; ?>
+       <style> <?= $custom_styles; ?></style>
       <?php endif; ?>
 
       <div id="<?= $modal['id']; ?>" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="<?= $modal['id']; ?>">
