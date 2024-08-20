@@ -19,7 +19,7 @@
 
           if($is_modal): ?>
 
-            <?php if($styles); ?>
+            <?php if($styles): ?>
               <style>
                 <?= $styles; ?>
               </style>
